@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html lang="es">
+<head>
+<!-- ============== This goes between the <head> tags ============ -->
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+// 0 = no/false and 1 = yes/true
+var random_rotate = 0; //  this will rotate images randomly .
+var order_rotation = 1;  // this will rotate images in order.
+var all_images = new Array();  // the image.
+var image_urls = new Array();  // the image link.
+var url_target = new Array();  // the target window.
+// _self,_parent,_blank,_top .
+
+all_images[0] ="images/banner_quote_01.png" ;
+
+all_images[1] ="images/banner_quote_02.png";
+
+
+
+
+// =================== End Vars ========================
+
+    function rotate() {
+    if(document.images){
+    var ry=Math.floor(Math.random()*all_images.length);
+    //if(ry==0){ry=1;}
+    //window.document.all['jscript'].value = "Random "+ry;
+    //window.document.all['image_count'].value = "Image Count "+all_images.length;
+
+    window.document.all['adBanner'].src=all_images[ry];
+    window.document.getElementById('adBannerLink').href=image_urls[ry];
+    window.document.getElementById('adBannerLink').target=url_target[ry];
+
+    window.setTimeout("rotate()", 12000); // milliseconds
+
+    }// end if browser supports images.
+	}// end rotate function
+
+
+      var start_image = -1;
+    function order_rotate(){
+    start_image++;
+    if(start_image>all_images.length-1){start_image=0}
+   // window.document.all['jscript'].value = "Number "+start_image;
+   //window.document.all['image_count'].value = "Image Count "+all_images.length;
+    window.setTimeout("order_rotate()",12000); // milliseconds
+
+    window.document.all['adBanner'].src=all_images[start_image];
+    window.document.getElementById('adBannerLink').href=image_urls[start_image];
+    window.document.getElementById('adBannerLink').target=url_target[start_image];
+    }
+
+// End Hide from older browsers -->
+</script>
+
+	<title>BEA</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+		<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+<script src="scripts/jquery-latest.js" type="text/javascript"></script>
+		<script src="scripts/thickbox.js" type="text/javascript"></script>
+<script type="text/javascript">
+			Shadowbox.init({
+    			handleOversize: "drag",
+    			modal: true
+			});
+        </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-image: url(images/bg_skystraper.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-color: #FFF;
+}
+
+.highlightone {
+	color: #D61C4A;
+}
+body,td,th {
+	color: #818285;
+}
+
+</style>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:625px;
+	height:93px;
+	z-index:1;
+}
+</style>
+
+<link href="css/thickbox.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<div id="container1">
+<div id="logo"><a href="index.html"><img src="images/logo.gif" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="event_details.html">Event Details</a></li>
+<li><a href="nominations.html">Awards</a></li>
+<li><a href="hall_of_fame.html">Hall of Fame</a></li>
+<li><a href="sponsorship.html">Sponsorship Opportunities</a></li>
+<li><a href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div id="clear"></div>
+<div id="content_grad_top"></div>
+</div>
+<!-- /container1 -->
+<div id="container2_a">
+<div id="apDiv1"><a id="adBannerLink" target=""><img name="adBanner" alt="ad banner" border="0" /></a></div>
+<div id="gray_graphic"><img src="images/event_details.png" /></div>
+</div>
+<!-- /container2 -->
+<div id="container3_a">
+<div id="content_main">
+<h1>Event Details</h1>
+<p>The CCIM Business Excellence Awards is a premier annual event put together by the CCIM Utah Chapter. This "red-carpet" style black-tie optional awards honors and showcases top performers, superior service, innovative ideas and design and will bring together more than 500 top business leaders and professionals from the commercial real estate sector. The 2014 awards event will be held at Salt Lake City Marriott City Center (75 South West Temple) on February 22, 2014.</p>
+<ul>
+<li>5:30 PM - 7:00 PM <strong>Cocktails &amp; Networking</strong></li>
+<li>7:00 PM - 7:45 PM <strong>Dinner</strong></li>
+<li>7:45 PM - 9:00 PM <strong>Program</strong></li>
+</ul>
+<p><a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_07.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_07.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_08.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_08.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_09.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_09.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_01.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_01.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_02.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_02.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_03.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_03.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_04.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_04.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_01.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_01.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_02.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_02.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_03.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_03.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_05.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_05.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_06.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_06.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_07.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_07.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_portrait_08.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_portrait_08.png" height="217" width="145" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_13.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_13.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_05.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_05.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_06.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_06.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_10.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_10.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_11.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_11.png" height="129" width="194" /></a> <a href="award_gallery/2013_award_photos/CCIM-Awards-2013_IMG_land_12.png" class="thickbox" rel="thickbox_slide1"><img src="award_gallery/2013_award_photos/thumb/thumb_CCIM-Awards-2013_IMG_land_12.png" height="129" width="194" /></a><br /><br /></p>
+<!--<h2>Award Catagory Descriptions</h2>
+<br />
+<h3>Architectural Design of the Year</h3>
+<p>An <strong>Architect of the Year</strong> award winner is a candidate who designs "outside the box" and delivers excellence in designs, service, schedule and budget. The candidate for this award is one who has a great reputation and ethical standards in the industry. They also establish uniqueness and challenges standard use of materials and design to look beyond the mean. They influence the industry with their creative designs/projects and build upon the next level of excellence in design and practices. Your nomination should include information on at least 1 and no more than 4 projects that have been completed by your firm or will be completed by your firm during 2011 or on or before October 1, 2012.</p>
+<h3>Broker of the Year (Industrial, Retail, Investment &amp; Office)</h3>
+<p>A <strong>Broker of the Year</strong> award winner is a candidate who has a current Utah real estate license with no restrictions. One who devotes 90% of his/her working time to the real estate brokerage business and has a principal place of business in the State of Utah. The candidate for this award exemplifies good brokerage practices, conducts themselves in a professional and ethical manner and enjoys a reputation of cooperation and high standards amongst his/her peers.</p>
+<h3>Contractor of the Year</h3>
+<p>The <strong>Contractor of the Year</strong> award winner is a candidate who consistently demonstrates a commitment to quality construction, service, industry involvement, and customer relations and meets compliances or exceeds contractor completion dates, goals and schedules. The candidate for this award exemplifies quality of workmanship and performance, success in assisting subcontractor relationships and adherence to safety standards. Your nomination should include at least 1 and no more than 4 projects that have been completed by your firm or will be completed by your firm during 2011 or on or before October 1, 2012.</p>
+<h3>Developer/Development of the Year</h3>
+<p>A <b>Developer/Development of the Year</b> award winner is a candidate/project that exemplifies vision, community commitment, innovative design and concept, and maximization of highest and best use. The size of the project is not necessarily important; rather, emphasis should be placed on the scope, innovation, and longevity of the project in the context of location, community acceptance, supply and demand, and viability. A winning project should be one that creates a sense of place in the community; one to which people are drawn and that has or will become a natural gathering place for years to come. The design, concept, and uses in the project should be innovative in a way that establishes itself as a leader among competing projects. The project should have been completed within the last two years; however, an under-construction project can also be used as long as it is complete on or before October 1, 2012.</p>
+<h3>Property Manager of the Year (New!)</h3>
+<p>A <strong>Property Manager of the Year</strong> finalist/recipient leverages its network of internal experts, strategic partners, alliances and preferred supplies to deliver actionable insights and measurable results to give its clients a competitive advantage. Areas of excellence lie in the ability to help clients reduce costs and realize savings while improving service levels by applying knowledge, technology, procurement leverage and processes. The property manager is a subject matter expert that uses best practices, processes, innovations, to customize delivery and provide superior services to tenants and property owners.</p>
+<h3>Lender of the Year</h3>
+<p>A <strong>Lender of the Year</strong> award winner is a candidate who has made an impact on Utah's economy and how businesses are able to grow or prosper from their loans. The candidate for this award must display both a responsible approach to working within the industry while also showing a great adherence to best practice and quality. To receive this award the candidate must be a top performer for their organization and have met their lending goals in 2010. Total loan amounts will be taken into account, in addition to the quantity and quality of loans that were generated by the candidate and their institution.</p>
+<h3>Real Estate Attorney of the Year (New!)</h3>
+<p>The <strong>Real Estate Attorney of the Year</strong> award winner is a candidate who demonstrates leadership and civility within his/her profession, involvement in major cases or transactions, and excellence and expertise in commercial real estate services. The candidate must also enjoy a reputation of cooperation, civility, and responsiveness among his/her peers and clients. This candidate must be one to which his/her peers and clients would feel comfortable referring other clients. The candidate must be nominated in order to be considered for this award.</p>
+<h3>Top Performer (Gold, Silver, Bronze Levels)</h3>
+<p>A <strong>Top Performer</strong> is a candidate who is the top 5,10, and 15 performers for their brokerage firm or company Differentiated by the Gold (top 5 performers), Silver (top 10 performers), and Bronze (top 15 performers). A Top Performer award is not voted on. A broker or senior level executive of the candidates company will directly nominate the candidate due to his or her accomplishments in the industry.</p>--></div>
+<!--<div id="content_side">
+<h2>Download Forms</h2>
+<p><a href="forms/CCIM_BusinessExcellenceAwards_Rules.pdf" target="_blank">Business Excellence Awards - RULES</a></p>
+<p><a href="forms/BE_Awards_Nomination_Forms_2013.pdf" target="_blank">BE Awards Nomination Form</a></p>
+<p><a href="forms/sponsorship_2013.pdf" target="_blank">Sponsorship Opportunities</a></p>
+<br />
+<h2>2013-2014</h2>
+<h2>Award Categories</h2>
+<p>Top Broker of the Year (NEW)<br /> Rookie of the Year (NEW)<br /> Top Real Estate Transaction of the Year (NEW)<br /> Architectural Firm of the Year<br /> Contractor of the Year<br /> Development/Redevelopment of the Year<br /> Industrial Broker of the Year<br /> Investment Broker of the Year<br /> Office Broker of the Year<br /> Retail Broker of the Year<br /> Property Manager of the Year<br />Real Estate Attorney of the Year<br />Real Estate Banker of the Year(NEW Split Award Categories)<br />*Commercial Real Estate<br />*Mid Market Real Estate</p>
+</div>-->
+<div id="clear"><center>
+<table border="0" width="810px">
+<tbody>
+<tr><th colspan="3">
+<h1 style="text-align: center;">BEA Committee</h1>
+</th></tr>
+</tbody>
+</table>
+<table border="0" width="810px">
+<tbody>
+<tr>
+<td width="270px">Jessmine Kim</td>
+<td width="270px">Ronda Landa</td>
+<td width="270px">John Smith</td>
+</tr>
+<tr>
+<td>CBRE, Office/Investment Properties</td>
+<td>First American Title</td>
+<td>Backman Title Services</td>
+</tr>
+<tr>
+<td><a href="mailto:jessmine.kim@cbre.com">jessmine.kim@cbre.com</a></td>
+<td><a href="mailto:rlanda@firstam.com">rlanda@firstam.com</a></td>
+<td><a href="mailto:jsmith@backmantitle.com">jsmith@backmantitle.com</a></td>
+</tr>
+<tr>
+<td colspan="3" height="10px"><hr /></td>
+</tr>
+<tr>
+<td>Rich Matheson</td>
+<td>Brandon Duke, CCIM</td>
+<td>Cory Moore</td>
+</tr>
+<tr>
+<td>Utah Retirement Systems</td>
+<td>Zions Bank</td>
+<td>Big D Construction</td>
+</tr>
+<tr>
+<td><a href="mailto:rich.matheson@urs.org">rich.matheson@urs.org</a></td>
+<td><a href="mailto:summer@interiors-west.com">brandon.duke@zionsbank.com</a></td>
+<td><a href="mailto:CMoore@big-d.com">CMoore@big-d.com</a></td>
+</tr>
+<tr>
+<td colspan="3" height="10px"><hr /></td>
+</tr>
+<tr>
+<td colspan="3">Tricia Smith</td>
+</tr>
+<tr>
+<td colspan="3">Utah CCIM Business Excellence Awards Administrator</td>
+</tr>
+<tr>
+<td colspan="3"><a href="mailto:tricia@utahccimchapter.com">tricia@utahccimchapter.com</a></td>
+</tr>
+</tbody>
+</table>
+</center></div>
+<div id="footer">The Business Excellence Awards is a division of the Utah CCIM Chapter. All rights reserved<br /> Site design by <a class="gesture" href="http://gesturestudio.com">Gesture Studio</a>, Development by <a class="amplify" href="http://amplifymediaco.com">Amplify Media</a><a></a></div>
+</div>
+<!-- /container3 --></div>
+<!-- /wrapper -->
+<p></p>
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.inspiredeventsbykelly.com/">jordan 11 legend blue</a> <a href="http://www.synergyfamilymedicine.com/">michael kors outlet</a> <a href="http://www.canbaral-la.com">black infrared 6s</a> <a href="http://www.commwes.com/">black infrared 6s</a> <a href="http://aithanshapira.com/new/news.asp/">jordan retro 6</a> <a href="http://www.cecilsautomotive.com/">black infrared 6s</a> <a href="http://www.pioneerlodging.com/">legend blue 11s</a> <a href="http://www.thirassur.fr">sac louis vuitton</a> <a href="http://www.heavensgate.com/">jordan 11 legend blue</a> <a href="http://amstar-usa.com">legend blue 11s</a> <a href="http://www.pthaloblue.com">louis vuitton outlet</a> <a href="http://shepherdinggrace.org/">jordan 6 black infrared</a> <a href="http://www.stdgear.com">beats by dre outlet</a> <a href="http://artseeeyewear.com/">jordan 6 black infrared</a> <a href="http://www.gslhog.org/">black infrared 6s</a> <a href="http://www.crossbordernetwork.org">lebron 12</a> <a href="http://www.pinterest.com/infrared6s2014/new-jordan-toro-infrared-6s-23-for-sale/">jordan 6 black infrared</a> <a href="http://www.kingcolefoods.com">louis vuitton outlet</a> <a href="http://www.bddjyr.net/">jordan 6 black infrared</a> <a href="http://www.bdlheatcool.com">coach outlet online</a> <a href="http://www.ronshosting.com/">Legend Blue 11s</a> <a href="http://www.ibespectacled.com">jordan 11 legend blue</a> <a href="http://www.mobshah.com/">jordan 6 black infrared</a> <a href="http://www.original-watercolours.net">legend blue 11s</a> <a href="http://www.commwes.com/">jordan 6 black infrared</a> <a href="http://torgancooper.com/">jordan 6 black infrared</a> <a href="http://www.traditionalvalues.us">louis vuitton outlet</a> <a href="http://www.urbancafeseattle.com">legend blue 11s</a> <a href="http://www.lexacount.com/">legend blue 11s</a> <a href="http://www.crossentrees.com/">cheap oakley sunglasses</a> <a href="http://theweathercell.com/">legend blue 11s</a> <a href="http://www.habitatforhumanitylockport.com">beats by dre black friday</a> <a href="http://www.pediatricspec.com/">jordan 11 legend blue</a> <a href="http://shepherdinggrace.org/">black infrared 6s</a> <a href="http://www.paclimbing.com">uggs black friday</a> <a href="http://artseeeyewear.com/">jordan 6 black infrared</a> <a href="http://liverunningresults.com">uggs black friday</a> <a href="http://www.fortworthrvshow.com/">jordan 6 black infrared</a> <a href="http://www.billlongband.com/">black infrared 6s</a> <a href="http://www.habitatforhumanitylockport.com">beats by dre black friday</a></div></body>
+</html>
+<!-- ============== This goes at the very bottom of the page ============ -->
+
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+if(random_rotate == 1){window.onload = rotate;}
+if(order_rotation == 1){window.onload = order_rotate;}
+
+// End Hide from older browsers -->
+</script>

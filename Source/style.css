@@ -1,0 +1,568 @@
+/*
+Sheet Name: BEA
+Author: Nathan Tomlinson/Amplify Media + Design
+Author URI: http://amplifymediaco.com
+*/
+
+@import "css/reset.css";
+
+
+
+/*********************************
+			TYPOGRAPHY
+**********************************/
+
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #818285;
+	/* background: url('images/bodybg.png'); */
+}
+
+h1 {
+	font-size: 24px;
+	color: #d31145;
+	text-transform: uppercase;
+	padding-bottom: 22px;
+}
+
+h2 {
+	font-size: 18px;
+	color: #838487;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+}
+
+h3 {
+	font-size: 14px;
+	color: #d31145;
+	padding-bottom: 5px;
+}
+
+h4 {
+	color: #d31145;
+	display: inline;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+a {
+	color: #848688;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d31145;
+	text-decoration: none;
+}
+
+table {
+	font-size:16px;
+	background-color:;
+	text-align:center;
+border: thick;
+}
+
+table h2{
+	color:#d31145;
+        font-size: 24px;
+padding: 4px;
+}
+
+table h3{
+	color:#d31145;
+        font-size: 17px;
+        text-decoration: underline;
+}
+
+table h1{
+	padding-bottom:5px;
+}
+
+table li{
+	text-align:left;	
+}
+
+
+/*********************************
+			table
+**********************************/
+
+.tableMain{
+background-color: #dddddd;
+}
+
+table hr{
+	color:#ccc;
+}
+
+table .borderAll1{
+	border: 1px solid #ccc;
+	height: 5px;
+	background-color:#FFFFFF;
+}
+
+table .borderLeft1{
+	border-left: 1px solid #ccc;
+	background-color:#fff;
+	font-size:12px;
+}
+
+table .borderSides1{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background-color:#fff;
+	font-size:12px;
+}
+
+table .borderLeft2{
+	border-left: 1px solid #ccc;
+	background-color:#fff;
+	font-size:12px;
+}
+/*********************************
+			jQuery
+**********************************/
+
+.containerJQ {
+    width:938px;
+    border:1px solid #d3d3d3;
+}
+.containerJQ div {
+    width:938px;
+}
+.containerJQ .header {
+    background:url(images/joinUs4.jpg);
+    padding: 0px;
+    cursor: pointer;
+    font:Arial, Helvetica, sans-serif;
+	height: 16px;
+}
+
+.dBlock1{
+	display: inline-block;	
+}
+
+.dBlock1 button{
+	background-color:#336699;
+	color: #fff;	
+}
+
+.dBlock2{
+	display: inline-block;	
+	margin-left: 680px;
+color: #d31145;
+}
+
+.containerJQ .content {
+    display: none;
+    padding : 0px;
+}
+
+.containerJQ .header p{
+	margin-top: -1px;
+	
+}
+
+/*********************************
+			SPONSORS
+**********************************/
+
+#sponsorsPage{
+width: 940px;
+background-color:#eeeeee;
+}
+
+#sponsorsPage img{
+margin-left: 4%;
+margin-right: 4%;
+}
+
+#sponsors{
+	margin-top:80px;
+}
+
+#sponsors img{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.marquee{ 	
+background-image:url(Images/spMarquee.jpg);	
+font-size:24px;
+margin-top: -20px;
+}
+
+.diamond{	
+background-image:url(Images/spDiamond.jpg);
+font-size:22px;
+}
+
+.gold{
+	background-image:url(Images/spGold.jpg);
+	font-size:20px;
+}
+
+.silver{
+	background-image:url(Images/spSilver.jpg);	 	
+	background-repeat:no-repeat;
+}
+
+.bronze{
+	background-image:url(Images/spBronze.jpg);
+	height: 12px;
+	background-repeat:no-repeat;
+}
+
+.vendor{
+	background-image:url(Images/spVendor.jpg);
+	height: 14px;
+	background-repeat:no-repeat;
+}
+/*********************************
+			STRUCTURE
+**********************************/
+
+#wrapper {
+	width: 940px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #edefef;
+	border-left: solid 1px #edefef;
+	border-right: solid 1px #edefef;
+}
+
+#container1 {
+	width: 940px;
+	height: 110px;
+}
+
+#logo {
+	width: 325px;
+	height: 100px;
+	background: url('images/logo.gif') no-repeat;
+	float: left;
+}
+
+#nav {
+	width: 615px;
+	height: 100px;
+	background: url('images/header_repeat.gif') repeat-x;
+	float: left;
+}
+
+#home_grad_top {
+	width: 940px;
+	height: 20px;
+	background: url('images/home_top_grad.gif') no-repeat;
+}
+
+#content_grad_top {
+	width: 940px;
+	height: 20px;
+	background: url('images/cont_top_grad.gif') no-repeat;
+}
+
+#container2 {
+	width: 940px;
+	height: 207px;
+	z-index: 1000;
+}
+
+#red_content {
+	width: 593px;
+	height: 152px;
+	padding: 15px 0 40px 20px;
+	font-size: 18px;
+	line-height: 168%;
+	font-weight: 200;
+	color: #f8f8f9;
+	background: url('images/red_repeat.gif') repeat-x;
+	float: left;
+	z-index: 1000;
+}
+
+#red_graphic {
+	width: 327px;
+	height: 207px;
+	background: url('images/red_graphic.gif') no-repeat;
+	float: left;
+}
+
+#container2_a {
+	width: 940px;
+	height: 95px;
+	background-color: #e0e0e0;
+}
+
+#gray_graphic {
+	width: 315px;
+	height: 90px;
+	margin-left: 625px;
+}
+
+
+#container3 {
+	width: 940px;
+	height: auto;
+	padding-top: 31px;
+	background: url('images/home_content_body.gif') no-repeat;
+	font-size: 14px;
+	color: #848688;
+}
+
+.title {
+	border-bottom: solid 1px #848688;
+	width: 600px;
+	padding: 0 0 3px 0;
+}
+
+.sponsors {
+	width: 600px;
+	min-height: 20px;
+	padding: 5px 10px 5px 0;
+}
+
+.sponsors img {
+	display: inline-block;
+	margin: 0 50px 30px 0;
+}
+
+#home_content {
+	width: 250px;
+	padding: 0 30px 30px 20px;
+	float: left;
+	line-height: 140%;
+}
+
+#home_content p {
+	margin: 0;
+	padding: 0;
+}
+
+#home_content_side {
+	width: 600px;
+	min-height: 315px;
+	margin-top: -27px;
+	margin-bottom: 10px;
+	padding: 0 19px 30px 19px;
+	float: left;
+	border-left: solid 2px #bfbfbf;
+	
+}
+
+#container3_a {
+	width: 940px;
+	height: auto;
+	padding-top: 31px;
+	background: url('images/content_body.gif') no-repeat;
+}
+
+#content_main {
+	width: 595px;
+	min-height: 510px;
+	padding: 0 28px 0 16px;
+	float: left;
+	line-height: 150%;
+}
+
+#content_main ul li{
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style-position: inside;
+}
+
+#content_main ul {
+	margin-bottom: 15px;
+}
+
+#content_main_sponsor {
+	width: 595px;
+	min-height: 510px;
+	padding: 0 28px 0 16px;
+	float: left;
+	line-height: 150%;
+}
+
+#content_main_sponsor ul {
+	margin-left: 22px;
+	padding-bottom: 10px;
+}
+
+#content_main ol {
+	margin-left: 22px;
+}
+
+#content_main li {
+	padding-bottom: 22px;
+}
+
+#nominations {
+	width: 595px;
+	min-height: 510px;
+	padding: 0 28px 0 16px;
+	float: left;
+	line-height: 150%;
+}
+
+#nominations ul li{
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style-position: inside;
+}
+
+#nominations ul {
+	margin-bottom: 15px;
+}
+
+.special {
+	text-decoration: underline;
+}
+
+.image {
+	float: right;
+	position: relative;
+	top: -50px;
+	left: -120px;
+	padding: 5px;
+	border: solid 1px silver;
+}
+
+#content_side {
+	width: 265px;
+	min-height: 335px;
+	background-color: #e4e6e7;
+	padding: 15px 10px 10px 10px;
+	margin-right: 16px;
+	margin-bottom: 25px;
+	line-height: 140%;
+	float: left;
+}
+
+#content_side li {
+	list-style: none;
+}
+
+#content_side h1 {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+
+
+#judges {
+	width: 410px;
+	padding: 15px 15px 10px 10px;
+	line-height: 140%;
+	float: right;
+}
+
+#content_side p {
+	margin: 0;
+	padding: 0;
+}
+
+#footer {
+	width: 912px;
+	height: 45px;
+	margin: 0 auto;
+	padding: 5px 0 0 0;
+	line-height: 160%;
+	font-size: 10px;
+	color: #848688;
+	border-top: solid 1px #bfbfbf;
+}
+
+#pop-out {
+	line-height: 140%;
+	text-align: justify;
+}
+
+
+/*********************************
+			NAVIGATION
+**********************************/
+
+
+#nav li {
+	display: inline-block;
+	font-size: 10px;
+	height: 12px;
+	color: #848688;
+	text-transform: uppercase;
+	margin-right: 10px;
+	margin-top: 79px;
+	padding-top: 8px;
+}
+
+#nav li:hover {
+	color: #d31145;
+	margin-top: 79px;
+	height: 12px;
+	padding-top: 8px;
+	background: url('images/nav_back.png') repeat-x;
+	cursor: pointer;
+}
+
+.current {
+	color: #d31145;
+	margin-top: 79px;
+	height: 12px;
+	padding-top: 8px;
+	background: url('images/nav_back.png') repeat-x;
+}
+
+
+
+.shadow {
+	padding: 15px;
+}
+
+
+p.textIndented{
+	padding-left: 2em;
+	margin-top: -15px;
+}
+
+
+/*********************************
+			OTHER STUFF
+**********************************/
+
+#clear {
+	clear: both;
+}
+
+.gesture a {
+	color: #848688;
+}
+
+.gesture a:hover {
+	color: #72a13f;
+}
+
+.amplify a {
+	color: #848688;
+}
+
+.amplify a:hover {
+	color: #e51837;
+}
+
+.center {
+	text-align: center;
+}
+
+.judge {
+	width: 10px;
+	overflow: hidden;
+}
+
+.tab {
+	float: right;
+	color: #d31145;
+	margin-right: 150px;
+}

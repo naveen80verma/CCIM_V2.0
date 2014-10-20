@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: lightgray;
+	color: blue;
+}
+
+h1{
+	color: #000;
+	margin-top: 0px;
+}
+
+#categoryOne{
+	backgorund-color: #222;
+	height: 540px;
+	width: 1080px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+}
+
+#categoryTwo{
+	backgorund-color: #222;
+	height: 540px;
+	width: 1080px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+}
+
+#categoryThree{
+	backgorund-color: #222;
+	height: 540px;
+	width: 1080px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+}
+
+/*LETTERS RED ON AND OFF*/
+#toggle1{
+	background-image:url(../Images/letterA_off.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle2{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle3{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle4{
+	background-image:url(../Images/letterA_off.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle5{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle6{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle7{
+	background-image:url(../Images/letterA_off.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle8{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+#toggle9{
+	background-image:url(../Images/letterA.gif);
+	float: left;
+	width: 360px;
+	height: 360px;
+	cursor: pointer;
+}
+
+/*END LETTERS ON AND OFF*/
+
+#voteTally{
+	color: #000;
+	border: solid;
+	border-color:#000;
+	background-color:#999;
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 1080px;
+	height: 300px;
+	
+}
+
+.rButtons{
+	display:inline-block;
+	margin-left: 25px;
+}
+
+.container{
+	display:inline;
+}
+
+.img-swap{
+	cursor: pointer;
+}
+
+#buttonContainer {
+	height: 50px;
+	width: 1080px;
+	margin-left: 0px;	
+}
+
+h3{
+	color: #000;
+}
+
+#buttonSave {
+	margin-left: 500px;
+	margin-top: 5px;
+	width: 94px;
+	height: 58px;
+	color: #000;
+	cursor: pointer;
+	background-image: url(../Images/buttons/submitOff.png);
+}
+
+.buttonForwardEmpty{
+	float: right;
+	height: 50px;
+	width: 140px;
+}
+
+.buttonForward{
+	float: right;
+	height: 50px;
+	width: 140px;
+	cursor: pointer;
+	background-image: url(../Images/buttons/goCatNext.png);
+}
+
+.buttonForward:hover{
+	background-image: url(../Images/buttons/goCatNextOvr.png);
+}
+
+.buttonBackEmpty{
+	float: left;
+	height: 50px;
+	width: 140px;
+}
+
+.buttonBack{
+	float: left;
+	height: 50px;
+	width: 140px;
+	background-image: url(../Images/buttons/goPrev.png);
+}
+
+.buttonBack:hover{
+	background-image: url(../Images/buttons/goPrevOvr.png);	
+}
+p{
+	color:#000000;
+}
+
+p.enlarge1{
+	display:inline-block;
+	margin-left: 10px;
+	color:#930;
+}
+
+p.enlarge2{
+	display:inline-block;
+	margin-left: 210px;
+	color:#930;
+}
+
+p.enlarge3{
+	display:inline-block;
+	margin-left: 200px;
+	color:#930;
+}
+
+#picText{
+	display:inline-block;
+}
+
+.btnTextField{
+	background-color: #CCC;	
+}
+
+#sideAlert{
+	height: 100px;
+	width: 100px;
+	
+	
+	margin-top: -300px;
+	margin-left: 1200px;
+	background-image: url(../Images/alertIm.png);
+}
+
+/*LIGHTBOX CSS STUFF
+/******************/
+/******************/
+
+/* line 7, ../sass/lightbox.sass */
+body:after {
+  content: url(../img/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  display: none;
+}
+
+/* line 11, ../sass/lightbox.sass */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+/* line 20, ../sass/lightbox.sass */
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+/* line 28, ../sass/lightbox.sass */
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 32, ../sass/lightbox.sass */
+.lightbox a img {
+  border: none;
+}
+
+/* line 35, ../sass/lightbox.sass */
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 44, ../sass/lightbox.sass */
+.lb-container {
+  padding: 4px;
+}
+
+/* line 47, ../sass/lightbox.sass */
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 56, ../sass/lightbox.sass */
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+/* line 63, ../sass/lightbox.sass */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 71, ../sass/lightbox.sass */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 74, ../sass/lightbox.sass */
+.lb-nav a {
+  outline: none;
+}
+
+/* line 77, ../sass/lightbox.sass */
+.lb-prev, .lb-next {
+  width: 49%;
+  height: 100%;
+  cursor: pointer;
+  /* Trick IE into showing hover */
+  display: block;
+}
+
+/* line 84, ../sass/lightbox.sass */
+.lb-prev {
+  left: 0;
+  float: left;
+}
+/* line 87, ../sass/lightbox.sass */
+.lb-prev:hover {
+  background: url(../images/prev.png) left 48% no-repeat;
+}
+
+/* line 90, ../sass/lightbox.sass */
+.lb-next {
+  right: 0;
+  float: right;
+}
+/* line 93, ../sass/lightbox.sass */
+.lb-next:hover {
+  background: url(../images/next.png) right 48% no-repeat;
+}
+
+/* line 96, ../sass/lightbox.sass */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 103, ../sass/lightbox.sass */
+.lb-data {
+  padding: 0 4px;
+  color: #bbbbbb;
+}
+/* line 106, ../sass/lightbox.sass */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+/* line 111, ../sass/lightbox.sass */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+/* line 115, ../sass/lightbox.sass */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+/* line 121, ../sass/lightbox.sass */
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 130, ../sass/lightbox.sass */
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+	

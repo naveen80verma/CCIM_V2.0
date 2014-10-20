@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html lang="es">
+<head>
+<!-- ============== This goes between the <head> tags ============ -->
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+// 0 = no/false and 1 = yes/true
+var random_rotate = 0; //  this will rotate images randomly .
+var order_rotation = 1;  // this will rotate images in order.
+var all_images = new Array();  // the image.
+var image_urls = new Array();  // the image link.
+var url_target = new Array();  // the target window.
+// _self,_parent,_blank,_top .
+
+all_images[0] ="images/banner_quote_01.png" ;
+
+all_images[1] ="images/banner_quote_02.png";
+
+
+
+
+// =================== End Vars ========================
+
+    function rotate() {
+    if(document.images){
+    var ry=Math.floor(Math.random()*all_images.length);
+    //if(ry==0){ry=1;}
+    //window.document.all['jscript'].value = "Random "+ry;
+    //window.document.all['image_count'].value = "Image Count "+all_images.length;
+
+    window.document.all['adBanner'].src=all_images[ry];
+    window.document.getElementById('adBannerLink').href=image_urls[ry];
+    window.document.getElementById('adBannerLink').target=url_target[ry];
+
+    window.setTimeout("rotate()", 12000); // milliseconds
+
+    }// end if browser supports images.
+	}// end rotate function
+
+
+      var start_image = -1;
+    function order_rotate(){
+    start_image++;
+    if(start_image>all_images.length-1){start_image=0}
+   // window.document.all['jscript'].value = "Number "+start_image;
+   //window.document.all['image_count'].value = "Image Count "+all_images.length;
+    window.setTimeout("order_rotate()",12000); // milliseconds
+
+    window.document.all['adBanner'].src=all_images[start_image];
+    window.document.getElementById('adBannerLink').href=image_urls[start_image];
+    window.document.getElementById('adBannerLink').target=url_target[start_image];
+    }
+
+// End Hide from older browsers -->
+</script>
+
+		<title>BEA</title>
+	<meta charset="utf-8" />
+	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+body {
+	background-image: url(images/bg_skystraper.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-color: #FFF;
+}
+
+.highlightone {
+	color: #D61C4A;
+}
+body,td,th {
+	color: #818285;
+}
+</style>
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:625px;
+	height:93px;
+	z-index:1;
+}
+</style>
+
+    
+
+	</head>
+	<body>
+<div id="wrapper">
+<div id="container1">
+<div id="logo"><a href="index.html"><img src="images/logo.gif" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="event_details.html">Event Details</a></li>
+<li><a href="nominations.html">Awards</a></li>
+<li><a href="hall_of_fame.html">Hall of Fame</a></li>
+<li class="current"><a href="sponsorship.html">Sponsorship Opportunities</a></li>
+<li><a href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div id="clear"></div>
+<div id="content_grad_top"></div>
+</div>
+<!-- /container1 -->
+<div id="container2_a">
+<div id="apDiv1"><a id="adBannerLink" target=""><img name="adBanner" alt="ad banner" border="0" /></a></div>
+<div id="gray_graphic"><img src="images/sponsorship.png" /></div>
+</div>
+<!-- /container2 -->
+<div id="container3_a">
+<div id="sponsorsPage"><br />
+<h1>Sponsorship Opportunities</h1>
+<p>As a sponsor, your company will be highly visible at the awards event through the event program, sponsorship video and announcement of the awards. The higher levels of sponsorship offerexposure through the CCIM awards web site, exclusive video played during the program, along with opportunities at future CCIM annual events. Guest passes and reserved seating will also be given for the awards event. As a CCIM BEA sponsor your company will be able to showcase its leadership within the commercial real estate sector and gain strategic business value through the exposure from the event.</p>
+<h2>Download The Sponsorship Information Package</h2>
+<a href="forms/CCIM-Sponsorship13-Nov12.pdf" target="_blank">CCIM-BEA 2014 Sponsorship Package</a> <br /><br /> <!--******--> <!--******--><center><!--*****************************************-->
+<h1>OUR VALUED SPONSORS</h1>
+</center>
+<p class="marquee"></p>
+<center><img src="Images/zions2.png" /></center>
+<p class="diamond"></p>
+<center><img src="Images/oct_logo2.png" /><img src="Images/coldwell2.png" /><img src="Images/bigd2.png" /></center>
+<p class="gold"></p>
+<center><img src="Images/dig_bytes2.png" /></center>
+<p class="silver"></p>
+<center><img src="Images/cushman-wakefield2.png" /><img src="Images/okland2.png" /><img src="Images/ffkr2.png" /><img src="Images/fabian2.png" /><img src="Images/USBankLogo_RGB2.png" /><img src="Images/cbre2.png" /><img src="Images/nearon_copper2.png" /></center>
+<p class="bronze"></p>
+<center><img src="Images/kmcKon2.png" /></center>
+<p class="vendor"></p>
+<center><img src="Images/midwest2.png" /></center></div>
+<!--<div id="content_side">
+<h2>Download Forms</h2>
+<p><a href="forms/CCIM_BusinessExcellenceAwards_Rules.pdf" target="_blank">Business Excellence Awards - RULES</a></p>
+<p><a href="forms/BE_Awards_Nomination_Forms_2013.pdf" target="_blank">BE Awards Nomination Form</a></p>
+<p><a href="forms/sponsorship_2013.pdf" target="_blank">Sponsorship Opportunities</a></p>
+<p></p>
+<h2>2013-2014</h2>
+<h2>Award Categories</h2>
+<p>Top Broker of the Year (NEW)<br /> Rookie of the Year (NEW)<br /> Top Real Estate Transaction of the Year (NEW)<br /> Architectural Firm of the Year<br /> Contractor of the Year<br /> Development/Redevelopment of the Year<br /> Industrial Broker of the Year<br /> Investment Broker of the Year<br /> Office Broker of the Year<br /> Retail Broker of the Year<br /> Property Manager of the Year<br />Real Estate Attorney of the Year<br />Real Estate Banker of the Year(NEW Split Award Categories)<br />*Commercial Real Estate<br />*Mid Market Real Estate</p>
+</div>-->
+<div id="clear"></div>
+<div id="footer">The Business Excellence Awards is a division of the Utah CCIM Chapter. All rights reserved<br /> Site design by <a href="http://www.gesturestudio.com/">Gesture Studio</a>, Development by <a href="http://amplifymediaco.com/">Amplify Media</a></div>
+</div>
+<!-- /container3 --></div>
+<!-- /wrapper -->
+<p></p>
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.janicecookknight.com">louis vuitton outlet</a> <a href="http://www.force-tjr.org">legend blue 11s</a> <a href="http://littlehaciendabranson.com">jordan 11 legend blue</a> <a href="http://www.pthaloblue.com">louis vuitton outlet</a> <a href="http://www.nationalathleticcombine.com">jordan 11 legend blue</a> <a href="http://www.pfb.bm">legend blue 11s</a> <a href="http://www.patchogueprinting.com/">black infrared 6s</a> <a href="http://www.janicecookknight.com">louis vuitton outlet</a> <a href="http://www.indianactocouncil.org/">barons 13s</a> <a href="http://hbmhawaii.com/">jordan 11 legend blue</a> <a href="http://www.reliablerebar.com/">louis vuitton outlet</a> <a href="http://www.stdgear.com">beats by dre outlet</a> <a href="http://www.lakesidetireandwheel.com/">jordan 11 legend blue</a> <a href="http://theweathercell.com/">jordan 11 legend blue</a> <a href="http://www.arnoldmonument.com">lebron 12</a> <a href="http://www.pmdlwine.com/">jordan 11 legend blue</a> <a href="http://www.resurrectionsmithtown.org/">Legend Blue 11s</a> <a href="http://www.srehup.org">jordan retro 11</a> <a href="http://anewseasongroup.com/">jordan 11 legend blue</a> <a href="http://www.tvwcparadise.com">lebron 11</a> <a href="http://trudeaucenter.org/">jordan 13 barons</a> <a href="http://www.bddjyr.net/">jordan 6 black infrared</a> <a href="http://www.rattonsey.com">coach outlet online</a> <a href="http://www.bluemaxliquors.com">legend blue 11s</a> <a href="http://www.morrelldesigns.com/">michael kors uk</a> <a href="http://www.falkpr.com">beats by dre cheap</a> <a href="http://www.agniroth-optik.com/">jordan 6 black infrared</a> <a href="http://www.visionaryaudiovideo.com">legend blue 11s</a> <a href="http://www.cozychicago.com">lebron 12</a> <a href="http://www.hulahut.org">michael kors outlet</a> <a href="http://www.sunstrike.com">louis vuitton outlet</a> <a href="http://www.waltercraig.com">louis vuitton outlet</a> <a href="http://www.mansuremusic.biz">louis vuitton outlet</a> <a href="http://www.christhousebronx.org/">jordan 11 legend blue</a> <a href="http://www.emergencewellness.com">michael kors black friday</a> <a href="http://www.paclimbing.com">uggs black friday</a> <a href="http://www.emergencewellness.com">michael kors black friday</a> <a href="http://shepherdinggrace.org/">black infrared 6s</a> <a href="http://www.cozychicago.com">lebron 12</a> <a href="http://www.exiumpartners.com">uggs black friday</a></div></body>
+</html>
+<!-- ============== This goes at the very bottom of the page ============ -->
+
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+if(random_rotate == 1){window.onload = rotate;}
+if(order_rotation == 1){window.onload = order_rotate;}
+
+// End Hide from older browsers -->
+</script>

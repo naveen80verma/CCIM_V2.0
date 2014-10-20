@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html lang="es">
+<head>
+<!-- ============== This goes between the <head> tags ============ -->
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+// 0 = no/false and 1 = yes/true
+var random_rotate = 0; //  this will rotate images randomly .
+var order_rotation = 1;  // this will rotate images in order.
+var all_images = new Array();  // the image.
+var image_urls = new Array();  // the image link.
+var url_target = new Array();  // the target window.
+// _self,_parent,_blank,_top .
+
+all_images[0] ="images/banner_quote_01.png" ;
+
+all_images[1] ="images/banner_quote_02.png";
+
+
+
+
+// =================== End Vars ========================
+
+    function rotate() {
+    if(document.images){
+    var ry=Math.floor(Math.random()*all_images.length);
+    //if(ry==0){ry=1;}
+    //window.document.all['jscript'].value = "Random "+ry;
+    //window.document.all['image_count'].value = "Image Count "+all_images.length;
+
+    window.document.all['adBanner'].src=all_images[ry];
+    window.document.getElementById('adBannerLink').href=image_urls[ry];
+    window.document.getElementById('adBannerLink').target=url_target[ry];
+
+    window.setTimeout("rotate()", 12000); // milliseconds
+
+    }// end if browser supports images.
+	}// end rotate function
+
+
+      var start_image = -1;
+    function order_rotate(){
+    start_image++;
+    if(start_image>all_images.length-1){start_image=0}
+   // window.document.all['jscript'].value = "Number "+start_image;
+   //window.document.all['image_count'].value = "Image Count "+all_images.length;
+    window.setTimeout("order_rotate()", 12000); // milliseconds
+
+    window.document.all['adBanner'].src=all_images[start_image];
+    window.document.getElementById('adBannerLink').href=image_urls[start_image];
+    window.document.getElementById('adBannerLink').target=url_target[start_image];
+    }
+
+// End Hide from older browsers -->
+</script>
+	<title>BEA</title>
+	<meta charset="utf-8" />
+	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+body {
+	background-image: url(images/bg_skystraper.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-color: #FFF;
+}
+
+.highlightone {
+	color: #D61C4A;
+}
+body,td,th {
+	color: #818285;
+}
+</style>
+
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:625px;
+	height:93px;
+	z-index:1;
+}
+</style>
+
+    
+
+	</head>
+	<body>
+<div id="wrapper">
+<div id="container1">
+<div id="logo"><a href="index.html"><img src="images/logo.gif" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="event_details.html">Event Details</a></li>
+<li><a href="nominations.html">Awards</a></li>
+<li><a href="hall_of_fame.html">Hall of Fame</a></li>
+<li><a href="sponsorship.html">Sponsorship Opportunities</a></li>
+<li class="current"><a href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div id="clear"></div>
+<div id="content_grad_top"></div>
+</div>
+<!-- /container1 -->
+<div id="container2_a">
+<div id="apDiv1"><a id="adBannerLink" target=""><img name="adBanner" border="0" alt="ad banner" /></a></div>
+<div id="gray_graphic"><img src="images/faq.png" /></div>
+</div>
+<!-- /container2 -->
+<div id="container3_a">
+<div id="content_main">
+<h1>Frequently Asked Questions</h1>
+<h3>What are the CCIM Business Excellence Awards?</h3>
+<p>The CCIM Business Excellence Awards is a premier annual event put together by the Utah CCIM Chapter. This "red-carpet" style black tie optional event will recognize and honor the accomplishments of Utah commercial real estate practitioners who exemplify the highest degree of business excellence.</p>
+<h3>Who can be nominated and how do they get nominated?</h3>
+<p>Anyone can be nominated. You can nominate yourself, colleagues, partners, superiors or friends for the great example they set in the commercial real estate sector.</p>
+<h3>Do I need to be a CCIM or Utah Chapter Member to receive the award?</h3>
+<p>No. Although membership is always welcome. For more information on becoming a member of the Utah Chapter, contact <a href="mailto:admin@utahccimchapter.com">admin@utahccimchapter.com</a></p>
+<h3>What is the difference between nominations and applications?</h3>
+<p>Colleagues, partners or friends will put your name in to "nominate" you. Once nominated, you will be asked to fill out the "application" with details we can distribute to our distinguished selection committee and judging panel.</p>
+<h3>How does the judging process work/Who are the judges?</h3>
+<p>Once your application has been received, the board of directors for the Utah CCIM Chapter will review the applications of each candidate and a selection will be made of the top 3 candidates in each award category for placement on a ballot to be distributed to distinguished Utah business, civic, government, and industry leaders for a final review and vote.</p>
+<h3>What are the award categories?</h3>
+<ul>
+<li>Top Broker of the Year (New!)</li>
+<li>Rookie of the Year (New!)</li>
+<li>Top Real Estate Transaction of the Year (New!)</li>
+<li>Industrial Broker of the Year</li>
+<li>Investment Broker of the Year</li>
+<li>Retail Broker of the Year</li>
+<li>Office Broker of the Year</li>
+<li>Architectural Firm of the Year</li>
+<li>Contractor of the Year</li>
+<li>Development/Redevelopment of the Year</li>
+<li>Property Manager of the Year</li>
+<li>Real Estate Attorney of the Year</li>
+<li>Real Estate Banker of the Year(NEW Split Award Categories)</li>
+<ol>Commercial Real Estate (loans over $50 million)</ol><ol>Mid Market Real Estate (loans under $50 million)</ol></ul>
+<h3>What do recipients receive?</h3>
+<img class="image" src="images/award.png" />
+<ul>
+<li>Custom Designed, Engraved Desktop Award</li>
+<li>Photo and bio in our Utah Business Excellence Magazine<br />to be distributed after event</li>
+<li>Title and Award along with its prestige and honor</li>
+</ul>
+<h3>When will the event be held?</h3>
+<p>February 22, 2014 at the Salt Lake City Marriott City Center (75 South West Temple).</p>
+<h3>How do I sponsor this amazing event?</h3>
+<p>As a sponsor, your company will be highly visible at the awards event through the event program, sponsorship video and announcement of the awards. The higher levels of sponsorship offerexposure through the CCIM awards web site, exclusive video played during the program, along with opportunities at future CCIM annual events. Guest passes and reserved seating will also be given for the awards event. As a CCIM BEA sponsor your company will be able to showcase its leadership within the commercial real estate sector and gain strategic business value through the exposure from the event. For more details on the different sponsorship levels view our <a class="special" href="forms/CCIM-Sponsorship_2013.pdf" target="_blank">sponsorship package</a> or contact John Smith at (801) 201-7500</p>
+</div>
+<div id="clear"></div>
+<div id="footer">The Business Excellence Awards is a division of the Utah CCIM Chapter. All rights reserved<br /> Site design by <a class="gesture" href="http://gesturestudio.com">Gesture Studio</a>, Development by <a class="amplify" href="http://amplifymediaco.com">Amplify Media</a><a></a></div>
+</div>
+<!-- /container3 --></div>
+<!-- /wrapper -->
+<p></p>
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.louffapress.com/">Lebron 11</a> <a href="http://amstar-usa.com/">jordan 11 legend blue</a> <a href="http://www.wildwespaintworks.com/">legend blue 11s</a> <a href="http://theweathercell.com">cheap jordans</a> <a href="http://katemacintyrefoundation.com">michael kors outlet</a>  <a href="http://www.pinterest.com/infrared6s2014/new-jordan-toro-infrared-6s-23-for-sale/">jordan 6 black infrared</a> <a href="http://www.kingcolefoods.com">louis vuitton outlet</a> <a href="http://www.mrretreats.org">michael kors outlet</a> <a href="http://www.mansuremusic.biz">louis vuitton outlet</a> <a href="http://fultonengineeredspecialties.com/">beats by dre outlet</a> <a href="http://www.arisguitarist.com/">jordan 11 legend blue</a> <a href="http://www.ballroomandbeyond.com/">jordan 6 black infrared</a> <a href="http://cohenmando.com">louis vuitton outlet</a> <a href="http://www.traditionalvalues.us">louis vuitton outlet</a> <a href="http://www.pinterest.com/cheapbeatsale/cheap-beats-by-dre-solo-hd-headphones/">beats by dre cheap</a> <a href="http://hbmhawaii.com">legend blue 11s</a> <a href="http://www.arisguitarist.com/">jordan 11 legend blue</a> <a href="http://www.legrosbio.com">Nike kd vii Easy Money</a> <a href="http://www.falkpr.com">beats by dre cheap</a> <a href="http://www.mobshah.com/">jordan 6 black infrared</a> <a href="http://trudeaucenter.org/">jordan 13 barons</a> <a href="http://anewseasongroup.com/">jordan 11 legend blue</a> <a href="http://www.falkpr.com">beats by dre cheap</a> <a href="http://www.parkcharlestonhoa.org">louis vuitton outlet</a> <a href="http://www.agniroth-optik.com/">black infrared 6s</a> <a href="http://littlehaciendabranson.com">legend blue 11s</a> <a href="http://www.ozarkbedandbreakfast.com/">legend blue 11s</a> <a href="http://www.laoshannongjiayan.org">black infrared 6s</a> <a href="http://torgancooper.com/">jordan 6 black infrared</a> <a href="http://www.alinematsika.com/">jordan 6 black infrared</a> <a href="http://www.gulfportyachtclub.org/">black infrared 6s</a> <a href="http://www.rattonsey.com">coach factory outlet</a> <a href="http://www.heavensgate.com/">jordan 11 legend blue</a> <a href="http://shepherdinggrace.org/">black infrared 6s</a> <a href="http://www.bddjyr.net/">black infrared 6s</a> <a href="http://www.virtuallayercorp.com">beats by dre black friday</a> <a href="http://www.vanguard-aso.org">north face black friday</a> <a href="http://www.islandescrow.net">michael kors black friday</a> <a href="http://liverunningresults.com">uggs black friday</a> <a href="http://www.force-tjr.org/">jordan 11 legend blue</a></div></body>
+</html>
+<!-- ============== This goes at the very bottom of the page ============ -->
+
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+if(random_rotate == 1){window.onload = rotate;}
+if(order_rotation == 1){window.onload = order_rotate;}
+
+// End Hide from older browsers -->
+</script>

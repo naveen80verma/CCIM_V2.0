@@ -1,0 +1,624 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	color: #222222;
+}
+
+h1{
+	color: #000;
+	margin-top: 0px;
+}
+
+html { 
+  background: url(../images/loginBG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#description{
+	text-align:left;
+}
+
+#description h2{
+	text-align: center;
+}
+
+#categoryOne{
+	background:url(../images/categoryBG.jpg);
+	height: 585px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryTwo{
+	background:url(../images/categoryBG.jpg);
+	height: 600px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryThree{
+	background:url(../images/categoryBG.jpg);
+	height: 600px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryFour{
+	background:url(../images/categoryBG.jpg);
+	height: 600px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryFive{
+	background:url(../images/categoryBG.jpg);
+	height: 660px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categorySix{
+	background:url(../images/categoryBG.jpg);
+	height: 600px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categorySeven{
+	background:url(../images/categoryBG.jpg);
+	height: 680px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+        background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryEight{
+	background:url(../images/categoryBG.jpg);
+	height: 540px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryNine{
+	background:url(../images/categoryBG.jpg);
+	height: 600px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryTen{
+	background:url(../images/categoryBG.jpg);
+	height: 680px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#categoryEleven{
+	background:url(../images/categoryBG.jpg);
+	height: 680px;
+	width: 1100px;
+	border: solid;
+	border-color: #000;
+	margin-top: 100px;
+background-color: #999;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+}
+
+#spacer{
+	height: 15px;
+	border: solid;
+}
+
+#toggle1, #toggle2, #toggle3, #toggle4, #toggle5, #toggle6, #toggle7, #toggle8, #toggle9, #toggle10, #toggle11, #toggle12, #toggle13, #toggle14, #toggle15, #toggle16, #toggle17, #toggle18, #toggle19, #toggle20{
+	margin-top: -5px;
+}
+
+#toggle21, #toggle22, #toggle23, #toggle24, #toggle25, #toggle26, #toggle27, #toggle28, #toggle29, #toggle30, #toggle31, #toggle32, #toggle33, #toggle34, #toggle35, #toggle36, #toggle37, #toggle38, #toggle39, #toggle40{
+	display: inline-block;
+}
+
+#toggle41, #toggle42, #toggle43, #toggle44, #toggle45, #toggle46, #toggle47, #toggle48, #toggle49, #toggle50, #toggle51, #toggle52, #toggle53, #toggle54, #toggle55, #toggle56, #toggle57, #toggle58, #toggle59, #toggle60{
+	display: inline-block;
+}
+
+#toggle61, #toggle62, #toggle63, #toggle64, #toggle65, #toggle66, #toggle67, #toggle68, #toggle69, #toggle70, #toggle71, #toggle72, #toggle73, #toggle74, #toggle75, #toggle76, #toggle77, #toggle78, #toggle79, #toggle80{
+	display: inline-block;
+}
+
+#toggle81, #toggle82, #toggle83, #toggle84, #toggle85, #toggle86, #toggle87, #toggle88, #toggle89, #toggle90, #toggle91, #toggle92, #toggle93, #toggle94, #toggle95, #toggle96, #toggle97, #toggle98, #toggle99, #toggle100{
+	display: inline-block;
+}
+
+#toggle101, #toggle102, #toggle103, #toggle104, #toggle105, #toggle106, #toggle107, #toggle108, #toggle109, #toggle110, #toggle111, #toggle112, #toggle113, #toggle114, #toggle115, #toggle116, #toggle117, #toggle118, #toggle119, #toggle120{
+	display: inline-block;
+}
+
+#toggle121, #toggle122, #toggle123, #toggle124, #toggle125, #toggle126, #toggle127, #toggle128, #toggle129, #toggle130, #toggle131, #toggle132, #toggle133, #toggle134, #toggle135, #toggle136, #toggle137, #toggle138, #toggle139, #toggle140{
+	display: inline-block;
+}
+
+#toggle141, #toggle142, #toggle143, #toggle144, #toggle145, #toggle146, #toggle147, #toggle148, #toggle149, #toggle150, #toggle151, #toggle152, #toggle153, #toggle154, #toggle155, #toggle156, #toggle157, #toggle158, #toggle159, #toggle160{
+	display: inline-block;
+}
+
+#toggle161, #toggle162, #toggle163, #toggle165, #toggle165, #toggle166, #toggle167, #toggle168, #toggle169, #toggle170, #toggle171, #toggle172, #toggle173, #toggle174, #toggle175, #toggle176, #toggle177, #toggle178, #toggle179, #toggle180{
+	display: inline-block;
+}
+
+#toggle181, #toggle182, #toggle183, #toggle184, #toggle185, #toggle186, #toggle187, #toggle188, #toggle189, #toggle190, #toggle191, #toggle192, #toggle193, #toggle194, #toggle195, #toggle196, #toggle197, #toggle198, #toggle199, #toggle200{
+	display: inline-block;
+}
+
+#toggle201, #toggle202, #toggle203, #toggle204, #toggle205, #toggle206, #toggle207, #toggle208{
+	display: inline-block;
+	margin-top: -5px;
+}
+
+#next2, #next3, #next3, #next4, #next5, #next6, #next7, #next8, #next9, #next10, #next11{
+	width: 150px;
+	height: 50px;
+	color: black;
+	float: right;	
+}
+
+/*LETTERS RED ON AND OFF*/
+.cat1{
+	display:inline-block;
+	width: 105px;
+	height: 105px;
+}
+
+.category1Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category2Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category3Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category4Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category5Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category6Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category7Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category8Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category9Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category10Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.category11Button{
+	background-image:url(../Images/letterA.gif);
+	margin-left: 7px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+/*END LETTERS ON AND OFF*/
+
+#voteTally{
+	
+	
+	border-color:#000;
+	
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 1080px;
+	height: 300px;
+	
+}
+
+#desc1, #desc2, #desc3, #desc4, #desc5, #desc6, #desc7, #desc8, #desc9, #desc10, #desc11, #desc12{
+	width: 200px;
+	height: 100px;
+	display:inline-block;
+	margin-left: 25px;
+}
+
+.container{
+	display:inline;
+}
+
+.img-swap{
+	cursor: pointer;
+}
+
+#buttonContainer {
+	height: 90px;
+	width: 1080px;
+	position:static;
+}
+
+.buttonForward{
+	position: absolute;
+	right: 0px;
+	bottom: 500px;
+	width: 150px;
+	height: 50px;
+}
+
+.buttonBack{
+	position: absolute;
+	left: 0px;
+	bottom: 500px;
+	width: 150px;
+	height: 50px;
+}
+
+h3{
+	color: #333;
+	display:inline-block;
+}
+
+#buttonSave {
+	position: absolute;
+	right: 0px;
+	bottom: 500px;
+	width: 180px;
+	height: 50px;
+	
+	
+/*	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	width:180px;
+	height: 58px;
+	color: #000;
+	cursor: pointer; */
+}
+
+p{
+	color:#000000;
+}
+
+.enPhotos{
+	margin-left: 00px;
+	text-align: center;
+	font-size: .7em;
+	border: none;
+}
+
+#picText{
+	display:inline-block;
+	margin-left: 9px;
+	margin-right: 9px;
+	color:#930;
+}
+
+.btnTextField{
+	background-color: #CCC;
+}
+
+#sideAlert{
+	height: 100px;
+	width: 100px;
+	
+	
+	margin-top: -300px;
+	margin-left: 1200px;
+	background-image: url(../Images/alertIm.png);
+}
+
+/*LIGHTBOX CSS STUFF
+/******************/
+/******************/
+
+/* line 7, ../sass/lightbox.sass */
+body:after {
+  content: url(../img/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  display: none;
+}
+
+/* line 11, ../sass/lightbox.sass */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+/* line 20, ../sass/lightbox.sass */
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+/* line 28, ../sass/lightbox.sass */
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 32, ../sass/lightbox.sass */
+.lightbox a img {
+  border: none;
+}
+
+/* line 35, ../sass/lightbox.sass */
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 44, ../sass/lightbox.sass */
+.lb-container {
+  padding: 4px;
+}
+
+/* line 47, ../sass/lightbox.sass */
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 56, ../sass/lightbox.sass */
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+/* line 63, ../sass/lightbox.sass */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 71, ../sass/lightbox.sass */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 74, ../sass/lightbox.sass */
+.lb-nav a {
+  outline: none;
+}
+
+/* line 77, ../sass/lightbox.sass */
+.lb-prev, .lb-next {
+  width: 49%;
+  height: 100%;
+  cursor: pointer;
+  /* Trick IE into showing hover */
+  display: block;
+}
+
+/* line 84, ../sass/lightbox.sass */
+.lb-prev {
+  left: 0;
+  float: left;
+}
+/* line 87, ../sass/lightbox.sass */
+.lb-prev:hover {
+  background: url(../images/prev.png) left 48% no-repeat;
+}
+
+/* line 90, ../sass/lightbox.sass */
+.lb-next {
+  right: 0;
+  float: right;
+}
+/* line 93, ../sass/lightbox.sass */
+.lb-next:hover {
+  background: url(../images/next.png) right 48% no-repeat;
+}
+
+/* line 96, ../sass/lightbox.sass */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 103, ../sass/lightbox.sass */
+.lb-data {
+  padding: 0 4px;
+  color: #bbbbbb;
+}
+/* line 106, ../sass/lightbox.sass */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+/* line 111, ../sass/lightbox.sass */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+/* line 115, ../sass/lightbox.sass */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+/* line 121, ../sass/lightbox.sass */
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 130, ../sass/lightbox.sass */
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+

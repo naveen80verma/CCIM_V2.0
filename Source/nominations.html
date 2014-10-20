@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html lang="es">
+<head>
+<!-- ============== This goes between the <head> tags ============ -->
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+// 0 = no/false and 1 = yes/true
+var random_rotate = 0; //  this will rotate images randomly .
+var order_rotation = 1;  // this will rotate images in order.
+var all_images = new Array();  // the image.
+var image_urls = new Array();  // the image link.
+var url_target = new Array();  // the target window.
+// _self,_parent,_blank,_top .
+
+all_images[0] ="images/banner_quote_01.png" ;
+
+all_images[1] ="images/banner_quote_02.png";
+
+
+
+
+// =================== End Vars ========================
+
+    function rotate() {
+    if(document.images){
+    var ry=Math.floor(Math.random()*all_images.length);
+    //if(ry==0){ry=1;}
+    //window.document.all['jscript'].value = "Random "+ry;
+    //window.document.all['image_count'].value = "Image Count "+all_images.length;
+
+    window.document.all['adBanner'].src=all_images[ry];
+    window.document.getElementById('adBannerLink').href=image_urls[ry];
+    window.document.getElementById('adBannerLink').target=url_target[ry];
+
+    window.setTimeout("rotate()", 12000); // milliseconds
+
+    }// end if browser supports images.
+	}// end rotate function
+
+
+      var start_image = -1;
+    function order_rotate(){
+    start_image++;
+    if(start_image>all_images.length-1){start_image=0}
+   // window.document.all['jscript'].value = "Number "+start_image;
+   //window.document.all['image_count'].value = "Image Count "+all_images.length;
+    window.setTimeout("order_rotate()",12000); // milliseconds
+
+    window.document.all['adBanner'].src=all_images[start_image];
+    window.document.getElementById('adBannerLink').href=image_urls[start_image];
+    window.document.getElementById('adBannerLink').target=url_target[start_image];
+    }
+
+// End Hide from older browsers -->
+</script>
+		<title>BEA</title>
+	<meta charset="utf-8" />
+	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css">
+body {
+	background-image: url(images/bg_skystraper.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	background-color: #FFF;
+}
+
+.highlightone {
+	color: #D61C4A;
+}
+body,td,th {
+	color: #818285;
+}
+
+    </style>
+    <style type="text/css">
+#apDiv1 {
+	position:absolute;
+	width:625px;
+	height:93px;
+	z-index:1;
+}
+</style>
+
+    
+
+	</head>
+<body>
+<div id="wrapper">
+<div id="container1">
+<div id="logo"><a href="index.html"><img src="images/logo.gif" /></a></div>
+<div id="nav">
+<ul>
+<li><a href="event_details.html">Event Details</a></li>
+<li><a href="nominations.html">Awards</a></li>
+<li><a href="hall_of_fame.html">Hall of Fame</a></li>
+<li><a href="sponsorship.html">Sponsorship Opportunities</a></li>
+<li><a href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</div>
+<div id="clear"></div>
+<div id="content_grad_top"></div>
+</div>
+<!-- /container1 -->
+<div id="container2_a">
+<div id="apDiv1"><a id="adBannerLink" target=""><img name="adBanner" alt="ad banner" border="0" /></a></div>
+<div id="gray_graphic"><img src="images/nominations.png" /></div>
+</div>
+<!-- /container2 -->
+<div id="container3_a">
+<div id="nominations"><img src="images/stayTunedFinalsts.jpg" /> <!--***********************************--> <!--***********************************--><br /><br />
+<table border="0"><!--<td class="title">-->
+<tbody>
+<tr>
+<td colspan="4">
+<h2><span style="text-decoration: underline;">2014 Business Excellence Award Finalists</span></h2>
+</td>
+</tr>
+<!--<b><i>New This Year!</i></b><br /><br /><br />
+<p class="textIndented"><a href="forms/2014NominationFormAwardDescriptions.pdf#page=2" target="_blank">*Top Broker of the Year <span color="red" style="color: red;">(NEW)</span></a><br /><br /><a href="forms/2014NominationFormAwardDescriptions.pdf#page=2" target="_blank"> *Rookie of the Year <span color="red" style="color: red;">(NEW)</span></a><br /><br /><a href="forms/2014NominationFormAwardDescriptions.pdf#page=2" target="_blank"> *Top Real Estate Transaction of the Year <span color="red" style="color: red;">(NEW)</span></a></p>
+<span size="-1">(These three objective award categories are based on the largest or highest dollar volume lease/sales considerations)</span><br />--> <!--<tr><td colspan='4'  class='borderAll1'>Broker:</td></tr>--> <!--<p class="textIndented"><a href="forms/2014NominationFormAwardDescriptions.pdf#page=3" target="_blank">Industrial Broker of the Year</a></p>-->
+<tr>
+<td class="borderLeft1" width="25%">
+<h3>Industrial Broker of the Year</h3>
+</td>
+<td class="borderLeft1">
+<h3>Investment Broker of the Year</h3>
+</td>
+<td class="borderLeft1">
+<h3>Retail Broker of the Year</h3>
+</td>
+<td class="borderSides1">
+<h3>Office Broker of the Year</h3>
+</td>
+</tr>
+<tr>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Zach Anderson<br /> Newmark Grubb</b></td>
+<td class="borderLeft1">Greg Barratt, Hendricks &amp; Berkadia</td>
+<td class="borderLeft1">Rob Moore, Coldwell Banker Commercial</td>
+<td class="borderSides1">Brandon Fugal, Coldwell Banker Commerical</td>
+</tr>
+<tr>
+<td class="borderLeft1">Tom Dischmann, CBRE</td>
+<td class="borderLeft1">Brye Blanchard, Newmark Grubb</td>
+<td class="borderLeft1">Tim Simonsen, Coldwell Banker Commercial</td>
+<td class="borderSides1">Collin Perkins, Newmark Grubb</td>
+</tr>
+<tr>
+<td class="borderLeft1">Kyle Roberts, Newmark Grubb</td>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Kip Paul<br /> Cushmand &amp; Wakefield | Commerce</b></td>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Stuart Thain<br /> Coldwell Banker Commercial</b></td>
+<td class="borderSides1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Eric Smith<br /> CBRE</b></td>
+</tr>
+<tr>
+<td colspan="4"><br /><hr /></td>
+</tr>
+<tr>
+<td class="borderLeft2">
+<h3>Architectural Firm of the Year</h3>
+</td>
+<td class="borderLeft2">
+<h3>Contractor of the Year</h3>
+</td>
+<td class="borderLeft2">
+<h3>Developer of the Year</h3>
+</td>
+<td class="borderLeft2">
+<h3>Property Manager of the Year</h3>
+</td>
+</tr>
+<tr>
+<td class="borderLeft2">EDA Architects</td>
+<td class="borderLeft2">Big-D Construction Company</td>
+<td class="borderLeft2" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Freeport<br /> West</b></td>
+<td class="borderLeft2" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Scott Bennion<br /> Riverpark</b></td>
+</tr>
+<tr>
+<td class="borderLeft2" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>FFKR<br />Architects</b></td>
+<td class="borderLeft2">Layton Construction Company</td>
+<td class="borderLeft2"></td>
+<td class="borderLeft2"></td>
+</tr>
+<tr>
+<td class="borderLeft2">MHTN Architects</td>
+<td class="borderLeft2" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Okland<br />Construction Company</b></td>
+<td class="borderLeft2"></td>
+<td class="borderLeft2"></td>
+</tr>
+<tr>
+<td colspan="4"><br /><hr /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td class="borderLeft" width="65px"></td>
+<td class="borderLeft1">
+<h3>Real Estate Attorney of the Year</h3>
+</td>
+<td class="borderLeft1">
+<h3>Commercial Banker of the Year</h3>
+</td>
+<td class="borderLeft1">
+<h3>Mid Market Banker of the Year</h3>
+</td>
+<td class="borderLeft" width="65px"></td>
+</tr>
+<tr>
+<td class="borderLeft" width="65px"></td>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Loyal Hulme<br /> Kirton McConkie</b></td>
+<td class="borderLeft1">John Montgomery, US Bank</td>
+<td class="borderLeft1">James Hilton, Wells Fargo Bank</td>
+<td class="borderLeft" width="65px"></td>
+</tr>
+<tr>
+<td class="borderLeft" width="65px"></td>
+<td class="borderLeft1">Scott Sabey, Fabian Law</td>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>Michelle Pearce<br /> US Bank</b></td>
+<td class="borderLeft1">Colton Smith, Marcus &amp; Millichap</td>
+<td class="borderLeft" width="65px"></td>
+</tr>
+<tr>
+<td class="borderLeft" width="65px"></td>
+<td class="borderLeft1"></td>
+<td class="borderLeft1">Todd Thompson, Wells Fargo Bank</td>
+<td class="borderLeft1" style="border: 1px solid; border-color: #FF0033;"><img src="Images/tableBanner.jpg" /><br /><b>David Snow<br /> Bank of Utah</b></td>
+<td class="borderLeft" width="65px"></td>
+</tr>
+</tbody>
+</table>
+<!--*****--> <!--*****--> <!--*****--><br />
+<p>Top PerformersTop Performers were selected by senior executives at each firm. The distinction between "gold", "silver" and "bronze was based solely upon the ranking of each agent per brokerage firm.</p>
+<p>Gold</p>
+<ul>
+<li>Scott Wilmarth (CBRE)</li>
+<li>Richard Dye (CBRE)</li>
+<li>Tab Cornelison (CBRE)</li>
+<li>Tab Cornelison (CBRE)</li>
+<li>Craig Thomas (CBRE)</li>
+<li>Brandon Fugal (Coldwell Banker Commercial)</li>
+<li>Stuart Thain (Coldwell Banker Commercial)</li>
+<li>Garit Lawson (Coldwell Banker Commercial)</li>
+<li>Tim Simonsen (Coldwell Banker Commercial)</li>
+<li>Jordan Wall (Coldwell Banker Commercial)</li>
+<li>Kip Paul (Commerce Real Estate Solutions)</li>
+<li>Mike Richmond (Commerce Real Estate Solutions)</li>
+<li>Dana Baird (Commerce Real Estate Solutions)</li>
+<li>Dell Nichols (Commerce Real Estate Solutions)</li>
+<li>Jarrod Hunt (Commerce Real Estate Solutions)</li>
+<li>Michael Jeppesen (IPG Commercial Real Estate)</li>
+<li>Jeremy Jensen (IPG Commercial Real Estate)</li>
+<li>Ben Brown (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Chad Moore (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Zach Anderson (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Kyle Roberts (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Bryce Blanchard (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Tod Jones (Marcus &amp; Millichap)</li>
+<li>Danny Shin (Marcus &amp; Millichap)</li>
+</ul>
+Silver
+<ul>
+<li>Jeff Richards (CBRE)</li>
+<li>Eric Smith (CBRE)</li>
+<li>Eric Gustafson (CBRE)</li>
+<li>JR Moore (CBRE)</li>
+<li>Russ Harris (CBRE)</li>
+<li>Kent Kohlhase (Coldwell Banker Commercial)</li>
+<li>Doug Petty (Coldwell Banker Commercial)</li>
+<li>Steve Bowler (Coldwell Banker Commercial)</li>
+<li>Peggy Garcia (Coldwell Banker Commercial)</li>
+<li>Zach Beaudry (Coldwell Banker Commercial)</li>
+<li>Ralph Riedel (Commerce Real Estate Solutions)</li>
+<li>Mark Jensen (Commerce Real Estate Solutions)</li>
+<li>Tom Freeman (Commerce Real Estate Solutions)</li>
+<li>Mike Carroll (Commerce Real Estate Solutions)</li>
+<li>John Hunt (Commerce Real Estate Solutions)</li>
+<li>Mike Falk (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Kneel Robinson (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Brandon Wood (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Chris Hatch (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Preston Davis (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Jason Smith (Marcus &amp; Millichap)</li>
+<li>Mike Francis (Marcus &amp; Millichap)</li>
+</ul>
+Bronze
+<ul>
+<li>Barb Johnson (CBRE)</li>
+<li>Kreg Peterson (CBRE)</li>
+<li>James Mecham (CBRE)</li>
+<li>Eli Mills (CBRE)</li>
+<li>Vic Galanis (CBRE)</li>
+<li>Rich Robins (Coldwell Banker Commercial)</li>
+<li>Greg Gunn (Coldwell Banker Commercial)</li>
+<li>Greg Pavich (Coldwell Banker Commercial)</li>
+<li>Duane Bush (Coldwell Banker Commercial)</li>
+<li>Cody Black (Coldwell Banker Commercial)</li>
+<li>Peter Hanlon (Commerce Real Estate Solutions)</li>
+<li>Diane Taylor (Commerce Real Estate Solutions)</li>
+<li>Bob Mills (Commerce Real Estate Solutions)</li>
+<li>Nick Clark (Commerce Real Estate Solutions)</li>
+<li>Pete Rossi (Commerce Real Estate Solutions)</li>
+<li>Jim Sheldon (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Ryan Reeves (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Steve Condie (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Bill Nicoloff (NAI West/Mountain West Commercial Real Estate)</li>
+<li>Brett Palmer/Chris Monson (NAI West/Mountain West Commercial Real Estate)</li>
+</ul>
+Lenders
+<ul>
+<li>John Mastakis (Metro Commercial Finance)</li>
+<li>Michelle Pearce (US Bank)</li>
+<li>John Montgomery (US Bank)</li>
+<li>David Jackman (Zions Bank)</li>
+<li>Flynn Dawson (Zions Bank)</li>
+<li>Jacob Despain (Zions Bank)</li>
+<li>Brandon Duke (Zions Bank)</li>
+<li>Jeffrey Holt (Zions Bank)</li>
+<li>Ryan Spiers (Zions Bank)</li>
+</ul>
+<!--*************************
+<!--*************************
+<h1>2012-2013 Finalists</h1>
+<!--<h2>2012-2013 Finalists</h2>--><!--<img src="images/AR-logo.png" width="100" height="24" align="absmiddle" /> --><!--<img src="images/AR-logo.png" width="100" height="24" align="absmiddle" /></li>--><!--<img src="images/AR-logo.png" width="100" height="24" align="absmiddle" /></li>--></div>
+<div id="content_side">
+<h2>Download Forms</h2>
+<p><a href="forms/CCIM_BusinessExcellenceAwards_Rules.pdf" target="_blank">Business Excellence Awards - RULES</a></p>
+<p><a href="forms/BE_Awards_Nomination_Forms_2013.pdf" target="_blank">BE Awards Nomination Form</a></p>
+<p><a href="forms/sponsorship_2013.pdf" target="_blank">Sponsorship Opportunities</a></p>
+<br />
+<h2>2013-2014</h2>
+<h2>Award Categories</h2>
+<p>Industrial Broker of the Year<br />Office Broker of the Year<br /> Retail Broker of the Year<br /> Investment Broker of the Year<br /> Contractor of the Year<br /> Architectural Firm of the Year<br /> Lender of the Year<br /> Developer of the Year<br /> Property Manager of the Year<br /> Real Estate Attorney of the Year<br />Commercial Banker of the Year (New!)<br />Mid Market Banker of the Year (New!)</p>
+<br /> <!--<h1>Platinum Performers</h1>
+					<ul>
+						<li>Scott Wilmarth &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Richard Dye&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Dischmann Thomas&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Eric Smith &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Jeff Richards&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Wesley Cornelison&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Michael Miller&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Craig Thomas&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Robert Brown &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Kreg Peterson&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>James Mecham &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Doug Scheel &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Marty Plunkett&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Russ Harris &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>JR Moore&nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Nick Mason &nbsp;&nbsp;-&nbsp;&nbsp;CBRE</li>
+<li>Zach Beaudry&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Cody Black&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Steve Bowler&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Donald  Bush &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Brandon Fugal &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Peggy Garcia&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Greg Gunn&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Kent Kolhase&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Garit Lawson&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Rob Moore&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Lora Munson &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Greg Pavich &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Doug Petty &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Ralph Riedel &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Rich Robbins&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Randy Ross &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Tim Simonsen &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Bob Strasters&nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Stuart Thain &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Jordan Wall &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>James Wood &nbsp;&nbsp;-&nbsp;&nbsp;Coldwell Banker </li>
+<li>Danny Shin &nbsp;&nbsp;-&nbsp;&nbsp;Marcus & Millichap </li>
+<li>Michael Jeppsen &nbsp;&nbsp;-&nbsp;&nbsp;IPG</li>
+<li>Jeremy Jensen &nbsp;&nbsp;-&nbsp;&nbsp;IPG</li>
+<li>Zach Anderson&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Jim Balderson&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Jeff Bernson&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Bryce Blanchard&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Ben Brown&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Steve Condie&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Mike Falk&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Chris Falk &nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Chris Hatch&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Jeff Heaton &nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Casey Mills&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Chris Monson&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Chad Moore&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Bill Nicoloff&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Brett Palmer&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Kyle Roberts&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Kneel Robinson&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Jim Sheldon&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Wick Udy&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Brandon Wood&nbsp;&nbsp;-&nbsp;&nbsp;NAI West </li>
+<li>Jeff Pero &nbsp;&nbsp;-&nbsp;&nbsp;Chase Bank </li>
+<li>Finn Robbins&nbsp;&nbsp;-&nbsp;&nbsp;Chase Bank </li>
+<li>Kip Paul&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Mike Richmond&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Mark Jensen&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Chris Kirk&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Robert Mills&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Frank Matheson&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Charlie Davis&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Jeff Rossi&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Dana Baird&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>John Owens&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Jon Cowley&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Jason Dodge&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Chris Terry&nbsp;&nbsp;-&nbsp;&nbsp;Commerce CRG</li>
+<li>Todd Harris&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>Tracy Groll&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>Tom Etzel&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>David Mathis&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>Shafique Janmoh amad&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>Mike Brough&nbsp;&nbsp;-&nbsp;&nbsp;Zions Bank </li>
+<li>Cari Fullerton&nbsp;&nbsp;-&nbsp;&nbsp;Bank of Utah</li>
+					</ul>--></div>
+<div id="clear"></div>
+<div id="footer">The Business Excellence Awards is a division of the Utah CCIM Chapter. All rights reserved<br /> Site design by <a href="http://www.gesturestudio.com/">Gesture Studio</a>, Development by <a href="http://amplifymediaco.com/">Amplify Media</a></div>
+</div>
+<!-- /container3 --></div>
+<!-- /wrapper -->
+<p></p>
+<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;"> <a href="http://www.cozychicago.com">lebron 12</a> <a href="http://www.resurrectionsmithtown.org/">Legend Blue 11s</a> <a href="http://www.pinterest.com/airlegendblue11/">jordan 11 legend blue</a> <a href="http://www.riggiodesign.com">beats by dre outlet</a> <a href="http://www.blueoasisspalon.com">cheap jordans</a> <a href="http://www.synergyfamilymedicine.com/">michael kors outlet</a> <a href="http://www.janicecookknight.com">louis vuitton outlet</a> <a href="http://www.paschal66.org/">jordan 14 black toe</a> <a href="http://www.hungarybees.com/">michael kors outlet</a> <a href="http://www.fainmousque.com/">legend blue 11s</a> <a href="http://www.stonemasonsireland.net">black infrared 6s</a> <a href="http://www.bdlheatcool.com">coach factory outlet</a> <a href="http://www.qrcgroup.com/">jordan 14 black toe</a> <a href="http://www.impactathletic.com">michael kors outlet</a>  <a href="http://www.agniroth-optik.com/">jordan 6 black infrared</a> <a href="http://www.thesilverskillet.com/">legend blue 11s</a> <a href="http://www.pthaloblue.com">louis vuitton outlet</a> <a href="http://www.obbatala.com">louis vuitton outlet</a>    <a href="http://www.abkmusic.com//">jordan retro 6</a> <a href="http://www.ldankers.com/">michael kors outlet</a> <a href="http://www.hunterdonlegal.com">coach outlet online</a> <a href="http://www.inspiredeventsbykelly.com/">jordan 11 legend blue</a> <a href="http://www.lisamulliganmd.com/">michael kors outlet</a> <a href="https://www.fulmontmutual.com">legend blue 11s</a> <a href="http://www.karanfilasm.com/">jordan 14 black toe</a> <a href="http://www.qrcgroup.com/">jordan 14 black toe</a> <a href="http://www.legrosbio.com">Nike kd vii Easy Money</a> <a href="http://www.janicecookknight.com">louis vuitton outlet</a> <a href="http://www.thirassur.fr">sac louis vuitton</a> <a href="http://www.alinematsika.com/">jordan 6 black infrared</a> <a href="http://www.virtuallayercorp.com">beats by dre black friday</a> <a href="http://www.pediatricspec.com/">legend blue 11s</a> <a href="http://www.morrelldesigns.com/">michael kors outlet online</a> <a href="http://www.cleanwatercentral.org/">michael kors outlet</a>  <a href="http://www.islandescrow.net">michael kors black friday</a> <a href="http://www.tvwcparadise.com">lebron 11</a> <a href="http://www.mendocinocountyrollerderby.org">north face black friday</a> <a href="http://www.nationalathleticcombine.com">legend blue 11s</a> <a href="http://www.rattonsey.com">coach factory outlet</a> <a href="http://www.virtual-laser-devices.com/">black infrared 6s</a></div></body>
+</html>
+<!-- ============== This goes at the very bottom of the page ============ -->
+
+<script LANGUAGE="JavaScript">
+<!-- Hide from older browsers
+if(random_rotate == 1){window.onload = rotate;}
+if(order_rotation == 1){window.onload = order_rotate;}
+
+// End Hide from older browsers -->
+</script>

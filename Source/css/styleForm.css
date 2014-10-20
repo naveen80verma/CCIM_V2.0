@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+
+form{
+	margin-left: 150px;
+}
+body{
+	background-color: #ccc;
+	background-image:url(../SwiftMailer/images/mainBG2.jpg);
+	background-repeat:no-repeat;
+	max-width: 1390px;
+}
+
+#candInfo{
+	
+	padding: 15px;
+}
+
+#formName{
+	width: 400px;
+}
+
+#formCompany{
+	width: 400px;
+}
+
+#formContact{
+	width: 400px;
+}
+
+#formAddress{
+	width: 400px;
+}
+
+#formPhone{
+	width: 100px;
+}
+
+#idEmail{
+	width: 100px;
+	display:inline-block;	
+}
+
+#pName{
+	margin-left: 36px;
+}
+
+
+#pCompany{
+	margin-left: 1px;
+}
+
+#pAddress{
+	margin-left: 52px;	
+}
+
+#pPhone{
+	margin-left: 65px;
+}
+
+<!--SECOND FORM DIV IDS -->
+
+#formColOne{
+	display: inline-block;
+	width: 400px;
+	height: 165px;
+	border: solid;
+}
+
+#formColTwo{
+	display: inline-block;
+	width: 220px;
+	height: 165px;
+	padding:3px;
+	background-image:url(../images/formBG.jpg);
+	
+}
+
+#formColThree{
+	display: inline-block;
+	width: 220px;
+	height: 165px;
+	padding:3px;
+	background-image:url(../images/formBG.jpg);
+	
+}
+
+#formColFour{
+	display: inline-block;
+	width: 220px;
+	height: 165px;
+	padding:3px;
+	background-image:url(../images/formBG.jpg);
+	
+}
+
+#formColFive{
+	display: inline-block;
+	width: 220px;
+	height: 165px;
+	padding:3px;
+	background-image:url(../images/formBG.jpg);
+	
+}
+
+#pdfForm{
+	margin-top: 20px;
+	padding: 15px;
+	
+}
